@@ -97,9 +97,6 @@ header{
     cursor: pointer;
 }
 
-.header_nav {
-    
-}
 
 .nav-item, .nav_more {
     list-style: none;
@@ -204,6 +201,5 @@ footer h4{
 }
 
 .logo_footer {
-    width: 17vw;
-    margin-top: 3rem;
+    width: 15vw;
 }
