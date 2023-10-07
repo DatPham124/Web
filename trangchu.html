@@ -14,55 +14,60 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <!-- Font-Icons -->
     <script src="https://kit.fontawesome.com/30d0976aea.js" crossorigin="anonymous"></script>
-
-    
+    <!-- boostrap -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">    
 </head>
 <body>
     <div class="main">
         <!-- HEADER -->
-        <div class="header">
-            <div class="grid">
-                <div class="header-inner">
-                    <div class="logo">
-                        <a class="header_logo" href="trangchu.html"><img class="img_logo" src="./images/Logo/logo_name.png" alt=""></a>
+        <header>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-2 ">
+                        <div class="logo">
+                            <a href="trangchu.html"><img class="img_logo mx-auto d-block" src="./images/Logo/logo_name.png" alt=""></a>
+                        </div>
                     </div>
-                    <div class="header_search">
+                    <div class="col-sm-6">
                         <input class="search-input" type="text" placeholder="Bạn cần tìm sản phẩm nào...">
                         <a href=""><i class="search-icon fa-solid fa-magnifying-glass"></i></a>
                     </div>
-                    <div class="header-inner-item">
+                    <div class="col-sm-4 header-inner-item d-flex justify-content-around">
                         <div class="header_login"><a class="login-item" href="">Đăng nhập</a></div>
                         <div class="header_sign-up"><a class="sign-up-item" href="">Đăng ký</a></div>
                         <a class="header_cart" href="">
                             <i class="fa-solid fa-cart-shopping cart-icon"></i>
                             <span class="cart-item">Giỏ hàng</span>
                         </a>
-                    </div>
+                    </div>    
                 </div>
-
-                <ul class="header_navbar">
-                    <li class="nav-item">
-                        <a class="nav-item-a" href="trangchu.html">Trang chủ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-item-a" href="trangchu.html">Giới thiệu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-item-a" href="trangchu.html">
-                            Sản phẩm
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-item-a" href="trangchu.html">Tin tức</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-item-a" href="trangchu.html">Liên hệ</a>
-                    </li>
-                </ul>
-    
             </div>
-        </div>
+
+            <div class="container ">
+                <nav class="navbar navbar-expand-sm d-flex justify-content-around">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-item-a" href="trangchu.html">Trang chủ</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-item-a" href="trangchu.html">Giới thiệu</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-item-a" href="trangchu.html">
+                                Sản phẩm
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                        </li>
+                          <li class="nav-item">
+                            <a class="nav-item-a" href="trangchu.html">Tin tức</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-item-a" href="trangchu.html">Liên hệ</a>
+                          </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
         <!-- CONTAINER -->
         <div class="container">
@@ -90,9 +95,74 @@
         </div>
 
         <!-- FOOTER -->
-        <div class="footer">
-            <!-- Copyright -->
-        </div>
+        <footer>
+           <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <a href="trangchu.html"><img class="img_logo mx-auto d-block" src="./images/Logo/logo_name.png" alt="Tech shop"></a>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <h4 >BẠN CẦN HỖ TRỢ</h4>
+                        <div class="list-group">
+                            <p>
+                                <i class="fa-solid fa-phone"></i>
+                                (00)00000000
+                            </p>
+                            
+                            <p>
+                                <i class="fa-solid fa-envelope"></i>
+                                student@student.ctu.edu.vn
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Địa chỉ: Số 134, Đường 3/2, Phường Xuân Khánh, Quận Ninh Kiều, Thành phố Cần Thơ
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <h4 >HÃY THEO DÕI CHÚNG TÔI TRÊN</h4>
+                        <div class="list-group">
+                            <a href="#">
+                                <i class="fa-brands fa-facebook"></i>
+                                Facebook
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                                Instagram
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                                Twitter
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 ">
+                        <h4 >THANH TOÁN</h4>
+                        <div class="list-group">
+                            <span>
+                                <i class="fa-brands fa-cc-visa"></i>
+                                <i class="fa-brands fa-cc-paypal"></i>
+                            </span>
+
+                            <span>
+                                <i class="fa-brands fa-cc-mastercard"></i>
+                                <i class="fa-brands fa-dhl"></i>
+                            </span>
+        
+                            <span>
+                                <i class="fa-brands fa-cc-jcb"></i>
+                                <i class="fa-brands fa-cc-amex"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <p>Copyright &copy 2023 - Bản quyền thuộc về Tech Shop</p>
+                </div>
+           </div>
+        </footer>
     </div>
 </body>
 </html>
