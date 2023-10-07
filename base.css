@@ -1,5 +1,6 @@
 :root {
     --primary-color: rgb(222, 242, 255);
+    --primary-color_hover: rgb(159 200 228 / 70%);
     --logo-color: #473F57;
     --white-color: #fff;
     --black-color: #000;
@@ -22,5 +23,16 @@ html {
     box-sizing: border-box;
 }
 
-/* Responsive */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
 

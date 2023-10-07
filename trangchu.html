@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./base.css">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400, 500, 700display=swapsubset=vietnamese" rel="stylesheet"> -->
+    <!-- Font family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <!-- Font-Icons -->
     <script src="https://kit.fontawesome.com/30d0976aea.js" crossorigin="anonymous"></script>
     <!-- boostrap -->
@@ -43,30 +43,65 @@
                 </div>
             </div>
 
-            <div class="container ">
-                <nav class="navbar navbar-expand-sm d-flex justify-content-around">
-                    <ul class="navbar-nav">
+            <div class="header_nav container-fluid">
+                <ul class="navbar-nav">
+                    <nav class="header_nav navbar navbar-expand-sm d-flex justify-content-around">
                         <li class="nav-item">
                             <a class="nav-item-a" href="trangchu.html">Trang chủ</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-item-a" href="trangchu.html">Giới thiệu</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-item-a" href="trangchu.html">
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item-a" href="gioithieu.html">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item nav_more">
+                            <a class="nav-item-a " href="sanpham.html">
                                 Sản phẩm
                                 <i class="fa-solid fa-chevron-down"></i>
+                                <div>
+                                    <ul class="nav_more-product">
+                                        <li class="more-product-item">
+                                            <a class="more-product-item-a" href="dienthoai.html">                                        
+                                                <i class="fa-solid fa-mobile-screen-button more-pro-item-icon"></i>
+                                                Điện thoại
+                                            </a>
+                                        </li>
+                                        <li class="more-product-item">
+                                            <a class="more-product-item-a" href="tablet.html">
+                                                <i class="fa-solid fa-tablet-screen-button more-pro-item-icon"></i>                                                
+                                                Tablet
+                                            </a> 
+                                        </li>
+                                        <li class="more-product-item">
+                                            <a class="more-product-item-a" href="laptop.html">
+                                                <i class="fa-solid fa-laptop more-pro-item-icon"></i>                                                
+                                                Laptop
+                                            </a>
+                                        </li>
+                                        <li class="more-product-item">
+                                            <a class="more-product-item-a" href="tivi.html">
+                                                <i class="fa-solid fa-tv more-pro-item-icon"></i>                                                
+                                                Tivi
+                                            </a>
+                                        </li>
+                                        <li class="more-product-item">
+                                            <a class="more-product-item-a" href="camera.html">
+                                                <i class="fa-solid fa-camera more-pro-item-icon"></i>                                                
+                                                Máy ảnh
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </a>
                         </li>
-                          <li class="nav-item">
-                            <a class="nav-item-a" href="trangchu.html">Tin tức</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-item-a" href="trangchu.html">Liên hệ</a>
-                          </li>
-                    </ul>
-                </nav>
+                        <li class="nav-item">
+                            <a class="nav-item-a" href="tintuc.html">Tin tức</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item-a" href="lienhe.html">Liên hệ</a>
+                        </li>
+                    </nav>
+                </ul>
             </div>
+
         </header>
 
         <!-- CONTAINER -->
@@ -99,7 +134,7 @@
            <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-3">
-                        <a href="trangchu.html"><img class="img_logo mx-auto d-block" src="./images/Logo/logo_name.png" alt="Tech shop"></a>
+                        <a href="trangchu.html" ><img class="logo_footer mx-auto d-block" src="./images/Logo/logo_name.png" alt="Tech shop"></a>
                     </div>
 
                     <div class="col-sm-3">
@@ -124,15 +159,15 @@
                     <div class="col-sm-3">
                         <h4 >HÃY THEO DÕI CHÚNG TÔI TRÊN</h4>
                         <div class="list-group">
-                            <a href="#">
+                            <a href="#" class="social-media-icon">
                                 <i class="fa-brands fa-facebook"></i>
                                 Facebook
                             </a>
-                            <a href="#">
+                            <a href="#" class="social-media-icon">
                                 <i class="fa-brands fa-instagram"></i>
                                 Instagram
                             </a>
-                            <a href="#">
+                            <a href="#" class="social-media-icon">
                                 <i class="fa-brands fa-twitter"></i>
                                 Twitter
                             </a>
