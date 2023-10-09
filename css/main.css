@@ -8,22 +8,17 @@ header{
     margin: 1.5rem 0 0;
 }
 
-.header-inner {
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 8px;
+.header_search {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
 }
-
 
 .search-input {
     width: 85%;
     height: 40px;
     border-radius: 10px;
     font-size: 1.5rem;
-    margin-top: 3rem;
-    
 }
 
 .search-icon {
@@ -34,9 +29,11 @@ header{
 }
 
 .header-inner-item {
-    display: flex;
     font-size: 1.5rem;
-    margin-top: 3rem !important;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem 0;
 }
 
 .header-inner-item a{
@@ -49,16 +46,16 @@ header{
     font-size: 1.5rem;
 }
 
-
 .header_login, .header_sign-up, .header_cart  {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    min-width: 28%;
+    min-width: 26%;
     height: 40px;
     border: 1px solid var(--black-color);
     border-radius: 5px;
+    /* padding: 0.5rem 1rem; */
 }
 
 
@@ -72,18 +69,26 @@ header{
     cursor: pointer;
 }
 
-.header_nav{
+/* NAVBAR */
+
+.nav-btn-menu {
+    width: 15%;
+    margin: 0 1rem 0.5rem;
+}
+
+.header_nav {
     padding: 0;
 }
-.nav-item{
-    padding: 1rem;
+
+.nav-list {
+    width: 100%;
 }
+
 .nav_more {
     list-style: none;
     text-align: center;
-    /* padding: 8px 84px; */
     position: relative;
-    /* background-color: var(--primary-color_hover); */
+    
 
 }
 
@@ -96,9 +101,11 @@ header{
     color: var(--text-color);
     font-size: 1.6rem;
     font-weight: 800;
+    line-height: 4rem;
     text-decoration: none;
     text-transform: uppercase;
     position: relative;
+    display: block;
 }
 
 .nav_more {
@@ -131,7 +138,7 @@ header{
 }
 
 .more-product-item:hover {
-    background-color: #f8f8f8;
+    background-color: #efefef;
 }
 
 .more-product-item-a {

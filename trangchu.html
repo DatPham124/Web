@@ -18,6 +18,8 @@
     <!-- boostrap -->
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
     <script type="text/javascript" src="./bootstrap/js/bootstrap.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Link css -->
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/base.css">
@@ -31,84 +33,95 @@
             <div class="row">
                 <div class="col-md-2 ">
                     <div class="logo">
-                        <a href="trangchu.html"><img class="img_logo mx-auto d-block" src="./images/Logo/logo_name.png"
-                                alt=""></a>
+                        <a href="trangchu.html"><img class="img_logo img-center" src="./images/Logo/logo_name.png" alt=""></a>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <input class="search-input" type="text" placeholder="Bạn cần tìm sản phẩm nào...">
-                    <a href=""><i class="search-icon fa-solid fa-magnifying-glass"></i></a>
+                <div class="col-md-6 text-center header_search">
+                    <form class="" role="search">
+                        <input class="search-input" type="text" placeholder="Bạn cần tìm sản phẩm nào...">
+                        <a href=""><i class="search-icon fa-solid fa-magnifying-glass"></i></a>
+                    </form>
                 </div>
-                <div class="col-md-4 header-inner-item d-flex justify-content-around">
-                    <div class="header_login "><a href="">Đăng nhập</a></div>
-                    <div class="header_sign-up"><a href="">Đăng ký</a></div>
-                    <a class="header_cart" href="">
+                <div class="col-md-4 header-inner-item">
+                    <div class="header_login "><a href="dangnhap.html">Đăng nhập</a></div>
+                    <div class="header_sign-up"><a href="dangky.html">Đăng ký</a></div>
+                    <a class="header_cart" href="giohang.html">
                         <i class="fa-solid fa-cart-shopping cart-icon"></i>
                         <span>Giỏ hàng</span>
                     </a>
                 </div>
             </div>
         </div>
-        <nav>
-            <ul class="nav nav-tabs nav-justified">
-                <li class="nav-item">
-                    <a class="nav-item-a" href="trangchu.html">Trang chủ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-item-a" href="gioithieu.html">Giới thiệu</a>
-                </li>
-                <li class="nav-item nav_more">
-                    <a class="nav-item-a " href="sanpham.html">
-                        Sản phẩm
-                        <i class="fa-solid fa-chevron-down"></i>
-                        <div>
-                            <ul class="nav_more-product">
-                                <li class="more-product-item">
-                                    <a class="more-product-item-a" href="dienthoai.html">
-                                        <i class="fa-solid fa-mobile-screen-button more-pro-item-icon"></i>
-                                        Điện thoại
-                                    </a>
-                                </li>
-                                <li class="more-product-item">
-                                    <a class="more-product-item-a" href="tablet.html">
-                                        <i class="fa-solid fa-tablet-screen-button more-pro-item-icon"></i>
-                                        Tablet
-                                    </a>
-                                </li>
-                                <li class="more-product-item">
-                                    <a class="more-product-item-a" href="laptop.html">
-                                        <i class="fa-solid fa-laptop more-pro-item-icon"></i>
-                                        Laptop
-                                    </a>
-                                </li>
-                                <li class="more-product-item">
-                                    <a class="more-product-item-a" href="pc.html">
-                                        <i class="fa-solid fa-computer more-pro-item-icon"></i>
-                                        PC
-                                    </a>
-                                </li>
-                                <li class="more-product-item">
-                                    <a class="more-product-item-a" href="tivi.html">
-                                        <i class="fa-solid fa-tv more-pro-item-icon"></i>
-                                        Tivi
-                                    </a>
-                                </li>
-                                <li class="more-product-item">
-                                    <a class="more-product-item-a" href="camera.html">
-                                        <i class="fa-solid fa-camera more-pro-item-icon"></i>
-                                        Máy ảnh
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-item-a" href="tintuc.html">Tin tức</a>
-                </li>
-            </ul>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-sm header_nav">
+            <button class="navbar-toggler nav-btn-menu" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="collapsibleNavbar">
+                <ul class="nav-list navbar-nav nav-justified">
+                    <li class="nav-item">
+                        <a class="nav-item-a" href="trangchu.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item-a" href="gioithieu.html">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item nav_more">
+                        <a class="nav-item-a " href="sanpham.html">
+                            Sản phẩm
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <div>
+                                <ul class="nav_more-product">
+                                    <li class="more-product-item">
+                                        <a class="more-product-item-a" href="dienthoai.html">
+                                            <i class="fa-solid fa-mobile-screen-button more-pro-item-icon"></i>
+                                            Điện thoại
+                                        </a>
+                                    </li>
+                                    <li class="more-product-item">
+                                        <a class="more-product-item-a" href="tablet.html">
+                                            <i class="fa-solid fa-tablet-screen-button more-pro-item-icon"></i>
+                                            Tablet
+                                        </a>
+                                    </li>
+                                    <li class="more-product-item">
+                                        <a class="more-product-item-a" href="laptop.html">
+                                            <i class="fa-solid fa-laptop more-pro-item-icon"></i>
+                                            Laptop
+                                        </a>
+                                    </li>
+                                    <li class="more-product-item">
+                                        <a class="more-product-item-a" href="pc.html">
+                                            <i class="fa-solid fa-computer more-pro-item-icon"></i>
+                                            PC
+                                        </a>
+                                    </li>
+                                    <li class="more-product-item">
+                                        <a class="more-product-item-a" href="tivi.html">
+                                            <i class="fa-solid fa-tv more-pro-item-icon"></i>
+                                            Tivi
+                                        </a>
+                                    </li>
+                                    <li class="more-product-item">
+                                        <a class="more-product-item-a" href="camera.html">
+                                            <i class="fa-solid fa-camera more-pro-item-icon"></i>
+                                            Máy ảnh
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item-a" href="tintuc.html">Tin tức</a>
+                    </li>
+                </ul>
+
+            </div>
         </nav>
 
+
+        
+        
     </header>
 
     <!-- CONTAINER -->
@@ -119,10 +132,10 @@
                     <div class="row">
                         <div class="col-8">
                             <a href="">
-                                <img class="mySlides ft-news-img img-center" src="./images/TrangChu/TinTucNoiBat1.png" alt="" style="width:100%">
+                                <img class="mySlides ft-news-img img-center w-100" src="./images/TrangChu/TinTucNoiBat1.png" alt="" >
                             </a>
                             <a href="">
-                                <img class="mySlides ft-news-img img-center" src="./images/TrangChu/TinTucNoiBat7.png" alt="" style="width:100%">
+                                <img class="mySlides ft-news-img img-center w-100" src="./images/TrangChu/TinTucNoiBat7.png" alt="" >
                             </a>
                             <script>
                                 var myIndex = 0;
@@ -137,7 +150,7 @@
                                 myIndex++;
                                 if (myIndex > x.length) {myIndex = 1}    
                                 x[myIndex-1].style.display = "block";  
-                                setTimeout(carousel, 3000); // Change image every 4 seconds
+                                setTimeout(carousel, 2000); // Change image every 4 seconds
                                 }
                                 </script>
                         </div>
@@ -162,37 +175,37 @@
                         Danh mục sản phẩm
                     </div>
                     <div class="row pt-4">
-                        <div class="col-xl-2 col-md-4 col-6">
+                        <div class="col-lg-2 col-md-4 col-6">
                             <div class="prd-item-img mb-3">
                                 <img class="inner-img img-center" src="./images/Hình web/Điện thoại/remove_bg/Iphone15ProMax-removebg.png" alt="">
                             </div>
                             <div class="prd-item-name text-center">Điện thoại</div>
                         </div>
-                        <div class="col-xl-2 col-md-4 col-6">
+                        <div class="col-lg-2 col-md-4 col-6">
                             <div class="prd-item-img mb-3">
                                 <img class="inner-img img-center" src="./images/Hình web/Tablet/Samsung_Galaxy_Tab_A8_2022__5.490.000__-removebg-preview.png" alt="">
                             </div>
                             <div class="prd-item-name text-center">Tablet</div>
                         </div>
-                        <div class="col-xl-2 col-md-4 col-6">
+                        <div class="col-lg-2 col-md-4 col-6">
                             <div class="prd-item-img mb-3">
                                 <img class="inner-img img-center" src="./images/Hình web/laptop/Laptop_Apple_MacBook_Pro_13_inch_M2_2022-removebg.png" alt="">
                             </div>
                             <div class="prd-item-name text-center">Laptop</div>
                         </div>
-                        <div class="col-xl-2 col-md-4 col-6">
+                        <div class="col-lg-2 col-md-4 col-6">
                             <div class="prd-item-img mb-3">
                                 <img class="inner-img img-center" src="./images/Hình web/Màn hình máy tính/Màn_hình_MSI_PRO_MP223_21.45_inch-removebg.png" alt="">
                             </div>
                             <div class="prd-item-name text-center">Màn hình máy tính</div>
                         </div>
-                        <div class="col-xl-2 col-md-4 col-6">
+                        <div class="col-lg-2 col-md-4 col-6">
                             <div class="prd-item-img mb-3">
                                 <img class="inner-img img-center" src="./images/Hình web/Tivi/TCL_Smart_Tivi_40S5400A.png" alt="">
                             </div>
                             <div class="prd-item-name text-center">Tivi</div>
                         </div>
-                        <div class="col-xl-2 col-md-4 col-6">
+                        <div class="col-lg-2 col-md-4 col-6">
                             <div class="prd-item-img mb-3">
                                 <img class="inner-img img-center" src="./images/Hình web/máy ảnh/remove_bg/Fujifilm_GFX_50S_Mark_2_76.990.000_96.990.000-20.000.000_-removebg.png" alt="">
                             </div>
