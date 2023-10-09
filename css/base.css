@@ -7,6 +7,10 @@
     --text-color: #333;
     --border-color: #dbdbdb;
     --star-gold-color: #FFCE3E;
+    --green-color: #17bd7d;
+    --lightgrey-color: lightgrey;
+    --grey-color: grey;
+    --red-color: rgb(205, 2, 2);
     --navbar-height: 34px;
     --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
 }
