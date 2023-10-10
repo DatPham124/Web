@@ -1,0 +1,155 @@
+.wraped_main {
+    background-color: #f2f2f2;
+}
+
+.title-trangchu {
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin-left: 15px;
+}
+
+.section-trangchu {
+    background-color: var(--white-color);
+    border-radius: 10px;
+    margin-top: 2rem ;
+    margin-bottom: 2rem ;
+}
+
+/* Featured news */
+.mySlides {
+    display: none;
+}
+
+
+.news_tech {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.slide_pre-icon,
+.slide_next-icon {
+    background-color: var(--logo-color);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+}
+
+
+/* Product Catalogy */
+
+
+.prd-cata-name {
+}
+
+.prd-item-img{
+    background-color: var(--primary-color);
+    width: 10rem;
+    height: 10rem;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 3px; */
+}
+
+/* .prd-item-img img {
+    width: 8rem;
+    background-color: wheat;
+    padding: 10px;
+    width: 10rem;
+    border-radius: 10px;
+} */
+
+.inner-img {
+    width: 8rem;
+}
+
+.inner-img:hover {
+    transform: translateY(-10px);
+}
+
+.prd-item-name {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+
+
+/* Điện thoại */
+
+.prd-type-item {
+    min-height: 36rem;
+}
+
+.prd-type-item_center {
+    display: block;
+    margin: auto;
+}
+
+.wrapped-name-price {
+    /* min-height: 10rem; */
+}
+
+.prd-type-item-name {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.prd-type-item-price {
+    color: red;
+}
+
+.btn-buy {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-color);
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    padding: 0.8rem 0;
+    margin-top: 1.2rem;
+}
+
+.btn-buy:hover {
+    background-color: var(--primary-color_hover);
+}
+
+.prd-type-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Xem tất cả */
+.prd-type-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    margin: auto 3rem;
+    text-decoration: none;
+    color: var(--logo-color);
+    border: 1px solid var(--logo-color);
+}
+
+.prd-type-all:hover {
+    background-color: var(--logo-color);
+    color: var(--white-color);
+}
+
+.prd-type-all span {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.prd-type-all i {
+    padding-left: 0.6rem;
+    font-size: 1.8rem;
+}
+
+
+

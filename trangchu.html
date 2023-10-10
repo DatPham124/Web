@@ -7,19 +7,23 @@
     <title>Tech Shop</title>
     <link rel="icon" type="image/x-icon" href="./images/Logo/logo_icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/base.css">
     <!-- Font family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
-        rel="stylesheet">
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet">
     <!-- Font-Icons -->
     <script src="https://kit.fontawesome.com/30d0976aea.js" crossorigin="anonymous"></script>
     <!-- boostrap -->
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
     <script type="text/javascript" src="./bootstrap/js/bootstrap.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Link css -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/trangchu.css">
 </head>
 
 <body>
@@ -29,104 +33,312 @@
             <div class="row">
                 <div class="col-md-2 ">
                     <div class="logo">
-                        <a href="trangchu.html"><img class="img_logo mx-auto d-block" src="./images/Logo/logo_name.png"
-                                alt=""></a>
+                        <a href="trangchu.html"><img class="img_logo img-center" src="./images/Logo/logo_name.png" alt=""></a>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <input class="search-input" type="text" placeholder="Bạn cần tìm sản phẩm nào...">
-                    <a href=""><i class="search-icon fa-solid fa-magnifying-glass"></i></a>
+                <div class="col-md-6 text-center header_search">
+                    <form class="" role="search">
+                        <input class="search-input" type="text" placeholder="Bạn cần tìm sản phẩm nào...">
+                        <a href=""><i class="search-icon fa-solid fa-magnifying-glass"></i></a>
+                    </form>
                 </div>
-                <div class="col-md-4 header-inner-item d-flex justify-content-around">
-                    <div class="header_login "><a href="">Đăng nhập</a></div>
-                    <div class="header_sign-up"><a href="">Đăng ký</a></div>
-                    <a class="header_cart" href="">
+                <div class="col-md-4 header-inner-item">
+                    <div class="header_login "><a href="dangnhap.html">Đăng nhập</a></div>
+                    <div class="header_sign-up"><a href="dangky.html">Đăng ký</a></div>
+                    <a class="header_cart" href="giohang.html">
                         <i class="fa-solid fa-cart-shopping cart-icon"></i>
                         <span>Giỏ hàng</span>
                     </a>
                 </div>
             </div>
         </div>
-        <nav>
-            <ul class="nav nav-tabs nav-justified">
-                <li class="nav-item">
-                    <a class="nav-item-a" href="trangchu.html">Trang chủ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-item-a" href="gioithieu.html">Giới thiệu</a>
-                </li>
-                <li class="nav-item nav_more">
-                    <a class="nav-item-a " href="sanpham.html">
-                        Sản phẩm
-                        <i class="fa-solid fa-chevron-down"></i>
-                        <div>
-                            <ul class="nav_more-product">
-                                <li class="more-product-item">
-                                    <a class="more-product-item-a" href="dienthoai.html">
-                                        <i class="fa-solid fa-mobile-screen-button more-pro-item-icon"></i>
-                                        Điện thoại
-                                    </a>
-                                </li>
-                                <li class="more-product-item">
-                                    <a class="more-product-item-a" href="tablet.html">
-                                        <i class="fa-solid fa-tablet-screen-button more-pro-item-icon"></i>
-                                        Tablet
-                                    </a>
-                                </li>
-                                <li class="more-product-item">
-                                    <a class="more-product-item-a" href="laptop.html">
-                                        <i class="fa-solid fa-laptop more-pro-item-icon"></i>
-                                        Laptop
-                                    </a>
-                                </li>
-                                <li class="more-product-item">
-                                    <a class="more-product-item-a" href="tivi.html">
-                                        <i class="fa-solid fa-tv more-pro-item-icon"></i>
-                                        Tivi
-                                    </a>
-                                </li>
-                                <li class="more-product-item">
-                                    <a class="more-product-item-a" href="camera.html">
-                                        <i class="fa-solid fa-camera more-pro-item-icon"></i>
-                                        Máy ảnh
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-item-a" href="tintuc.html">Tin tức</a>
-                </li>
-            </ul>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-sm header_nav">
+            <button class="navbar-toggler nav-btn-menu" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="collapsibleNavbar">
+                <ul class="nav-list navbar-nav nav-justified">
+                    <li class="nav-item">
+                        <a class="nav-item-a" href="trangchu.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item-a" href="gioithieu.html">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item nav_more">
+                        <a class="nav-item-a " href="sanpham.html">
+                            Sản phẩm
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <div>
+                                <ul class="nav_more-product">
+                                    <li class="more-product-item">
+                                        <a class="more-product-item-a" href="dienthoai.html">
+                                            <i class="fa-solid fa-mobile-screen-button more-pro-item-icon"></i>
+                                            Điện thoại
+                                        </a>
+                                    </li>
+                                    <li class="more-product-item">
+                                        <a class="more-product-item-a" href="tablet.html">
+                                            <i class="fa-solid fa-tablet-screen-button more-pro-item-icon"></i>
+                                            Tablet
+                                        </a>
+                                    </li>
+                                    <li class="more-product-item">
+                                        <a class="more-product-item-a" href="laptop.html">
+                                            <i class="fa-solid fa-laptop more-pro-item-icon"></i>
+                                            Laptop
+                                        </a>
+                                    </li>
+                                    <li class="more-product-item">
+                                        <a class="more-product-item-a" href="pc.html">
+                                            <i class="fa-solid fa-computer more-pro-item-icon"></i>
+                                            PC
+                                        </a>
+                                    </li>
+                                    <li class="more-product-item">
+                                        <a class="more-product-item-a" href="tivi.html">
+                                            <i class="fa-solid fa-tv more-pro-item-icon"></i>
+                                            Tivi
+                                        </a>
+                                    </li>
+                                    <li class="more-product-item">
+                                        <a class="more-product-item-a" href="camera.html">
+                                            <i class="fa-solid fa-camera more-pro-item-icon"></i>
+                                            Máy ảnh
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item-a" href="tintuc.html">Tin tức</a>
+                    </li>
+                </ul>
+
+            </div>
         </nav>
 
+
+        
+        
     </header>
 
     <!-- CONTAINER -->
-    <main class="">
-        <!-- Tin tức nổi bật -->
-        <div class="featured-news">
+    <div class="wraped_main">
+        <main class="container-fluid">
+                <!-- Tin tức nổi bật -->
+                <div class="featured-news container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                  <a href="" class="carousel-item active">
+                                    <img src="./images/TrangChu/TinTucNoiBat1.png" class="d-block w-100" alt="...">
+                                  </a href="">
+                                  <a href="" class="carousel-item">
+                                    <img src="./images/TrangChu/TinTucNoiBat2.png" class="d-block w-100" alt="...">
+                                  </a href="">
+                                  <a href="" class="carousel-item">
+                                    <img src="./images/TrangChu/TinTucNoiBat7.png" class="d-block w-100" alt="...">
+                                  </a href="">
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon slide_pre-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon slide_next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                        </div>
+                        <!-- <div class="col-4">
+                            <div class="row news_tech">Tin công nghệ</div>
+                            <div class="news_tech-item-wraped">
+                                <div class="row">
+                                    <a class="news-tech-item-link" href="">
+                                        <div class="news-tech-item-img"><img class="news-tech-item-img" src="./images/TrangChu/TinTucNoiBat4.png" alt="" width="30%"></div>
+                                        <span class="news-tech-item-name">So sánh iPhone 15 Plus và iPhone 15 Pro Max</span>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+        
+                <!-- Danh mục sản phẩm -->
+                <div class="product-catalog section-trangchu container p-3 pb-4">
+                    <div class="title-trangchu prd-cata-name">Danh mục sản phẩm</div>
+                    <div class="row pt-4">
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <a href="#phone" class="prd-item-img mb-3">
+                                <img class="inner-img img-center" src="./images/Hình web/Điện thoại/remove_bg/Iphone15ProMax-removebg.png" alt="">
+                            </a>
+                            <div class="prd-item-name text-center">Điện thoại</div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <a href="#tablet" class="prd-item-img mb-3">
+                                <img class="inner-img img-center" src="./images/Hình web/Tablet/Samsung_Galaxy_Tab_A8_2022__5.490.000__-removebg-preview.png" alt="">
+                            </a>
+                            <div class="prd-item-name text-center">Tablet</div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <a href="" class="prd-item-img mb-3">
+                                <img class="inner-img img-center" src="./images/Hình web/laptop/Laptop_Apple_MacBook_Pro_13_inch_M2_2022-removebg.png" alt="">
+                            </a>
+                            <div class="prd-item-name text-center">Laptop</div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <a href="" class="prd-item-img mb-3">
+                                <img class="inner-img img-center" src="./images/Hình web/Màn hình máy tính/Màn_hình_MSI_PRO_MP223_21.45_inch-removebg.png" alt="">
+                            </a>
+                            <div class="prd-item-name text-center">Màn hình máy tính</div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <a href="" class="prd-item-img mb-3">
+                                <img class="inner-img img-center" src="./images/Hình web/Tivi/TCL_Smart_Tivi_40S5400A.png" alt="">
+                            </a>
+                            <div class="prd-item-name text-center">Tivi</div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <a href="" class="prd-item-img mb-3">
+                                <img class="inner-img img-center" src="./images/Hình web/máy ảnh/remove_bg/Fujifilm_GFX_50S_Mark_2_76.990.000_96.990.000-20.000.000_-removebg.png" alt="">
+                            </a>
+                            <div class="prd-item-name text-center">Máy ảnh</div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Giảm giá -->
+                <div class="flash-sale container">
+                    
+                </div>
+        
+                <!-- Sản phẩm nổi bật-->
+                <div class="product-type">
+                    <!-- Điện thoại -->
+                    <div class="section-trangchu container p-3 pb-4" id="phone">
+                        <div class="title-trangchu prd-type-name" >Điện thoại nổi bật</div>
+                        <div class="row pb-4">
+                            <div class="col-md-3 col-6 pt-4">
+                                <div class="card prd-type-item prd-type-item_center" style="width: 18rem;">
+                                    <a href="#"><img src="./images/Hình web/Điện thoại/Iphone15ProMax.jpeg" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                      <div class="wrapped-name-price">
+                                          <a class="prd-type-item-name" href=""><h4 class="card-title ">iPhone 15 Pro Max 256GB </h4></a>
+                                          <h4 class="prd-type-item-price">34.990.000 ₫</h4>
+                                      </div>
+                                      <a href="#" class="btn-buy">Mua ngay</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 pt-4">
+                                <div class="card prd-type-item prd-type-item_center" style="width: 18rem;">
+                                    <a href="#"><img src="./images/Hình web/Điện thoại/Iphone15.jpeg" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                      <div class="wrapped-name-price">
+                                          <a class="prd-type-item-name" href=""><h4 class="card-title ">iPhone 15 256GB </h4></a>
+                                          <h4 class="prd-type-item-price">24.990.000 ₫</h4>
+                                      </div>
+                                      <a href="#" class="btn-buy">Mua ngay</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 pt-4">
+                                <div class="card prd-type-item prd-type-item_center" style="width: 18rem;">
+                                    <a href="#"><img src="./images/Hình web/Điện thoại/SamsungGalaxyZFold55G.jpeg" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                      <div class="wrapped-name-price">
+                                          <a class="prd-type-item-name" href=""><h4 class="card-title ">Samsung Galaxy Z Fold5 5G 256GB</h4></a>
+                                          <h4 class="prd-type-item-price">40.990.000 ₫</h4>
+                                      </div>
+                                      <a href="#" class="btn-buy">Mua ngay</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 pt-4">
+                                <div class="card prd-type-item prd-type-item_center" style="width: 18rem;">
+                                    <a href="#"><img src="./images/Hình web/Điện thoại/SamsungGalaxyZFlip55G.jpeg" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                      <div class="wrapped-name-price">
+                                          <a class="prd-type-item-name" href=""><h4 class="card-title ">Samsung Galaxy Z Flip5 5G 256GB</h4></a>
+                                          <h4 class="prd-type-item-price">25.990.000 ₫</h4>
+                                      </div>
+                                      <a href="#" class="btn-buy">Mua ngay</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="prd-type-all" href="dienthoai.html">
+                            <span>Xem tất cả</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
 
-        </div>
+                    <!-- Tablet -->
+                    <div class="section-trangchu container p-3 pb-4" id="tablet">
+                        <div class="title-trangchu prd-type-name" >Tablet nổi bật</div>
+                        <div class="row pb-4">
+                            <div class="col-md-3 col-6 pt-4">
+                                <div class="card prd-type-item prd-type-item_center" style="width: 18rem;">
+                                    <a href="#"><img src="./images/Hình web/Tablet/iPad_mini_6_2021_8.3_inch_WiFi_64GB__11.990.000__-removebg-preview.png" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                      <div class="wrapped-name-price">
+                                          <a class="prd-type-item-name" href=""><h4 class="card-title ">iPad mini (Gen 6) Wifi 256GB</h4></a>
+                                          <h4 class="prd-type-item-price">18.990.000 ₫</h4>
+                                      </div>
+                                      <a href="#" class="btn-buy">Mua ngay</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 pt-4">
+                                <div class="card prd-type-item prd-type-item_center" style="width: 18rem;">
+                                    <a href="#"><img src="./images/Hình web/Tablet/iPad_Pro_11_2022_M2_WiFi_5G_128GB__23.890.000__-removebg-preview.png" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                      <div class="wrapped-name-price">
+                                          <a class="prd-type-item-name" href=""><h4 class="card-title ">iPad Pro 11 (2022) WIFI 128GB</h4></a>
+                                          <h4 class="prd-type-item-price">21.990.000 ₫</h4>
+                                      </div>
+                                      <a href="#" class="btn-buy">Mua ngay</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 pt-4">
+                                <div class="card prd-type-item prd-type-item_center" style="width: 18rem;">
+                                    <a href="#"><img src="./images/Hình web/Tablet/Samsung_Galaxy_Tab_A8_2022__5.490.000__-removebg-preview.png" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                      <div class="wrapped-name-price">
+                                          <a class="prd-type-item-name" href=""><h4 class="card-title ">Samsung Galaxy Tab A8</h4></a>
+                                          <h4 class="prd-type-item-price">6.990.000 ₫</h4>
+                                      </div>
+                                      <a href="#" class="btn-buy">Mua ngay</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 pt-4">
+                                <div class="card prd-type-item prd-type-item_center" style="width: 18rem;">
+                                    <a href="#"><img src="./images/Hình web/Tablet/Samsung_Galaxy_Tab_S9_256GB__22.490.000__-removebg-preview.png" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                      <div class="wrapped-name-price">
+                                          <a class="prd-type-item-name" href=""><h4 class="card-title ">Samsung Galaxy Tab S9 5G 12/256GB</h4></a>
+                                          <h4 class="prd-type-item-price">24.990.000 ₫</h4>
+                                      </div>
+                                      <a href="#" class="btn-buy">Mua ngay</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="prd-type-all" href="dienthoai.html">
+                            <span>Xem tất cả</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
 
-        <!-- Danh mục sản phẩm -->
-        <div class="product-catalog">
-
-        </div>
-
-        <!-- Giảm giá -->
-        <div class="flash-sale">
-
-        </div>
-
-        <!-- Loại sản phẩm 1 -->
-        <!-- Điện thoại -->
-        <div class="product-type">
-
-        </div>
-
-    </main>
+                </div>
+        </main>
+    </div>
 
     <!-- FOOTER -->
     <footer>
