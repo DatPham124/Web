@@ -1,11 +1,17 @@
 :root {
     --primary-color: rgb(222, 242, 255);
+    --primary-color_hover: rgb(159 200 228 / 70%);
     --logo-color: #473F57;
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
     --border-color: #dbdbdb;
     --star-gold-color: #FFCE3E;
+    --green-color: #17bd7d;
+    --lightgrey-color: lightgrey;
+    --grey-color: grey;
+    --red-color: rgb(205, 2, 2);
+    --container-bg-color: #f2f2f2;
     --navbar-height: 34px;
     --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
 }
@@ -13,6 +19,7 @@
 * {
     box-sizing: inherit;
 }
+
 
 html {
     font-size: 62.5%; /*10px*/
@@ -22,5 +29,19 @@ html {
     box-sizing: border-box;
 }
 
-/* Responsive */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.img-center {
+    display: block;
+    margin: auto;
+}
+
+
 

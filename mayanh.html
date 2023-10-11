@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máy ảnh</title>
+    <link rel="icon" type="image/x-icon" href="./images/Logo/logo_icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    
+    <!-- Font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- Font-Icons -->
+    <script src="https://kit.fontawesome.com/30d0976aea.js" crossorigin="anonymous"></script>
+    <!-- boostrap -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <script src="./bootstrap/js/bootstrap.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/sanpham.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 ">
+                    <div class="logo">
+                        <a href="trangchu.html"><img class="img_logo img-center" src="./images/Logo/logo_name.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center header_search">
+                    <form class="" role="search">
+                        <input class="search-input" type="text" placeholder="Bạn cần tìm sản phẩm nào...">
+                        <a href=""><i class="search-icon fa-solid fa-magnifying-glass"></i></a>
+                    </form>
+                </div>
+                <div class="col-md-4 header-inner-item">
+                    <div class="header_login "><a href="dangnhap.html">Đăng nhập</a></div>
+                    <div class="header_sign-up"><a href="dangky.html">Đăng ký</a></div>
+                    <a class="header_cart" href="giohang.html">
+                        <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                        <span>Giỏ hàng</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-sm header_nav">
+            <button class="navbar-toggler nav-btn-menu" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="collapsibleNavbar">
+                <ul class="nav-list navbar-nav nav-justified">
+                    <li class="nav-item">
+                        <a class="nav-item-a" href="trangchu.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item-a" href="gioithieu.html">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item nav_more">
+                        <a class="nav-item-a " href="sanpham.html">
+                            Sản phẩm
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <div>
+                                <ul class="nav_more-product">
+                                    <li class="more-product-item">
+                                        <a class="more-product-item-a" href="dienthoai.html">
+                                            <i class="fa-solid fa-mobile-screen-button more-pro-item-icon"></i>
+                                            Điện thoại
+                                        </a>
+                                    </li>
+                                    <li class="more-product-item">
+                                        <a class="more-product-item-a" href="tablet.html">
+                                            <i class="fa-solid fa-tablet-screen-button more-pro-item-icon"></i>
+                                            Tablet
+                                        </a>
+                                    </li>
+                                    <li class="more-product-item">
+                                        <a class="more-product-item-a" href="laptop.html">
+                                            <i class="fa-solid fa-laptop more-pro-item-icon"></i>
+                                            Laptop
+                                        </a>
+                                    </li>
+                                    <li class="more-product-item">
+                                        <a class="more-product-item-a" href="pc.html">
+                                            <i class="fa-solid fa-computer more-pro-item-icon"></i>
+                                            PC
+                                        </a>
+                                    </li>
+                                    <li class="more-product-item">
+                                        <a class="more-product-item-a" href="tivi.html">
+                                            <i class="fa-solid fa-tv more-pro-item-icon"></i>
+                                            Tivi
+                                        </a>
+                                    </li>
+                                    <li class="more-product-item">
+                                        <a class="more-product-item-a" href="camera.html">
+                                            <i class="fa-solid fa-camera more-pro-item-icon"></i>
+                                            Máy ảnh
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item-a" href="tintuc.html">Tin tức</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+
+        
+        
+    </header>
+
+    <!-- CONTAINER -->
+    <main class="">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-3 product">
+                    <a class="product-item">
+                        <div class="product-item_sale d-flex justify-content-between">
+                            <span class="product-item_sale-percent rounded-pill">-5%</span>
+                            <span class="product-item_sale-instalment rounded-pill">Trả góp 0%</span>
+                        </div>
+                        <div class="product-item_img">
+                            <img src="./images/Hình web/máy ảnh/Canon_eos_rp_1_21.550.000.jpg" alt="">
+                        </div>
+                        <h4 class="product-item_name">Canon EOS RP 1</h4>
+                        <div class="product-item_price d-flex justify-content-between">
+                            <span class="product-item_price-current">550.000<small><sub><u>đ</u></sub></small></span>
+                            <span class="product-item_price-old">490.000<small><sub><u>đ</u></sub></small></span>
+                        </div>
+                        <div class="product-item_action d-flex justify-content-between">
+                            <span class="product-item_rating">
+                                4.9<i class="fa-solid fa-star product-item_rating-icon"></i>(10)
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </span>
+                        </div>
+                        <button class="product-item_basket rounded-pill">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <span>Thêm vào giỏ hàng</span>
+                        </button>
+
+                    </a>
+                </div>
+
+                <div class="col-sm-3 product">
+                    <a class="product-item">
+                        <div class="product-item_sale d-flex justify-content-between">
+                            <span class="product-item_sale-percent rounded-pill">-10%</span>
+                            <span class="product-item_sale-instalment rounded-pill">Trả góp 0%</span>
+                        </div>
+                        <div class="product-item_img">
+                            <img src="./images/Hình web/máy ảnh/Canon_eos_rp_23.890.000.jpg" alt="">
+                        </div>
+                        <h4 class="product-item_name">Canon EOS RP</h4>
+                        <div class="product-item_price d-flex justify-content-between">
+                            <span class="product-item_price-current">23.890.000<small><sub><u>đ</u></sub></small></span>
+                            <span class="product-item_price-old">25.900.000<small><sub><u>đ</u></sub></small></span>
+                        </div>
+                        <div class="product-item_action d-flex justify-content-between">
+                            <span class="product-item_rating">
+                                4.9<i class="fa-solid fa-star product-item_rating-icon"></i>(10)
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </span>
+                        </div>
+                        <button class="product-item_basket rounded-pill">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <span>Thêm vào giỏ hàng</span>
+                        </button>
+
+                    </a>
+                </div>
+
+                <div class="col-sm-3 product">
+                    <a class="product-item">
+                        <div class="product-item_sale d-flex justify-content-between">
+                            <span class="product-item_sale-percent rounded-pill">-7%</span>
+                            <span class="product-item_sale-instalment rounded-pill">Trả góp 0%</span>
+                        </div>
+                        <div class="product-item_img">
+                            <img src="./images/Hình web/máy ảnh/Fujifilm_gfx_100_254.990.000.jpg" alt="">
+                        </div>
+                        <h4 class="product-item_name">Fujifilm GFX 100</h4>
+                        <div class="product-item_price d-flex justify-content-between">
+                            <span class="product-item_price-current">254.990.000<small><sub><u>đ</u></sub></small></span>
+                            <span class="product-item_price-old">260.900.000<small><sub><u>đ</u></sub></small></span>
+                        </div>
+                        <div class="product-item_action d-flex justify-content-between">
+                            <span class="product-item_rating">
+                                4.9<i class="fa-solid fa-star product-item_rating-icon"></i>(10)
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </span>
+                        </div>
+                        <button class="product-item_basket rounded-pill">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <span>Thêm vào giỏ hàng</span>
+                        </button>
+
+                    </a>
+                </div>
+
+                <div class="col-sm-3 product">
+                    <a class="product-item">
+                        <div class="product-item_sale d-flex justify-content-between">
+                            <span class="product-item_sale-percent rounded-pill">-10%</span>
+                            <span class="product-item_sale-instalment rounded-pill">Trả góp 0%</span>
+                        </div>
+                        <div class="product-item_img">
+                            <img src="./images/Hình web/máy ảnh/Fujifilm_GFX_50S_Mark_2_76.990.000(96.990.000-20.000.000).jpg" alt="">
+                        </div>
+                        <h4 class="product-item_name">Fujifilm GFX 50S Mark 2</h4>
+                        <div class="product-item_price d-flex justify-content-between">
+                            <span class="product-item_price-current">76.990.000<small><sub><u>đ</u></sub></small></span>
+                            <span class="product-item_price-old">83.500.000<small><sub><u>đ</u></sub></small></span>
+                        </div>
+                        <div class="product-item_action d-flex justify-content-between">
+                            <span class="product-item_rating">
+                                4.9<i class="fa-solid fa-star product-item_rating-icon"></i>(10)
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </span>
+                        </div>
+                        <button class="product-item_basket rounded-pill">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <span>Thêm vào giỏ hàng</span>
+                        </button>
+
+                    </a>
+                </div>
+                
+            </div>
+
+            <div class="row">
+                <div class="col-sm-3 product">
+                    <a class="product-item">
+                        <div class="product-item_sale d-flex justify-content-between">
+                            <span class="product-item_sale-percent rounded-pill">-15%</span>
+                            <span class="product-item_sale-instalment rounded-pill">Trả góp 0%</span>
+                        </div>
+                        <div class="product-item_img">
+                            <img src="./images/Hình web/máy ảnh/Leica_m11_bac_238.000.000.jpg" alt="">
+                        </div>
+                        <h4 class="product-item_name">Leica M11 Bạc</h4>
+                        <div class="product-item_price d-flex justify-content-between">
+                            <span class="product-item_price-current">238.000.000<small><sub><u>đ</u></sub></small></span>
+                            <span class="product-item_price-old">266.100.000<small><sub><u>đ</u></sub></small></span>
+                        </div>
+                        <div class="product-item_action d-flex justify-content-between">
+                            <span class="product-item_rating">
+                                4.9<i class="fa-solid fa-star product-item_rating-icon"></i>(10)
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </span>
+                        </div>
+                        <button class="product-item_basket rounded-pill">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <span>Thêm vào giỏ hàng</span>
+                        </button>
+
+                    </a>
+                </div>
+                
+                <div class="col-sm-3 product">
+                    <a class="product-item">
+                        <div class="product-item_sale d-flex justify-content-between">
+                            <span class="product-item_sale-percent rounded-pill">-17%</span>
+                            <span class="product-item_sale-instalment rounded-pill">Trả góp 0%</span>
+                        </div>
+                        <div class="product-item_img">
+                            <img src="./images/Hình web/máy ảnh/Mirrorless_camera_fujifilm_x-t5_43.490.000.jpg" alt="">
+                        </div>
+                        <h4 class="product-item_name">Mirrorless camera Fujifilm X T5</h4>
+                        <div class="product-item_price d-flex justify-content-between">
+                            <span class="product-item_price-current">43.490.000<small><sub><u>đ</u></sub></small></span>
+                            <span class="product-item_price-old">48.590.000<small><sub><u>đ</u></sub></small></span>
+                        </div>
+                        <div class="product-item_action d-flex justify-content-between">
+                            <span class="product-item_rating">
+                                4.9<i class="fa-solid fa-star product-item_rating-icon"></i>(10)
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </span>
+                        </div>
+                        <button class="product-item_basket rounded-pill">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <span>Thêm vào giỏ hàng</span>
+                        </button>
+
+                    </a>
+                </div>
+
+                <div class="col-sm-3 product">
+                    <a class="product-item">
+                        <div class="product-item_sale d-flex justify-content-between">
+                            <span class="product-item_sale-percent rounded-pill">-16%</span>
+                            <span class="product-item_sale-instalment rounded-pill">Trả góp 0%</span>
+                        </div>
+                        <div class="product-item_img">
+                            <img src="./images/Hình web/máy ảnh/Nikon_coolpix_p1000_1_19.490.000(24.990.000-5.500.000).jpg" alt="">
+                        </div>
+                        <h4 class="product-item_name">Nikon Coolpix P1000 1</h4>
+                        <div class="product-item_price d-flex justify-content-between">
+                            <span class="product-item_price-current">19.490.000<small><sub><u>đ</u></sub></small></span>
+                            <span class="product-item_price-old">21.200.000<small><sub><u>đ</u></sub></small></span>
+                        </div>
+                        <div class="product-item_action d-flex justify-content-between">
+                            <span class="product-item_rating">
+                                4.9<i class="fa-solid fa-star product-item_rating-icon"></i>(10)
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </span>
+                        </div>
+                        <button class="product-item_basket rounded-pill">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <span>Thêm vào giỏ hàng</span>
+                        </button>
+
+                    </a>
+                </div>
+
+                <div class="col-sm-3 product">
+                    <a class="product-item">
+                        <div class="product-item_sale d-flex justify-content-between">
+                            <span class="product-item_sale-percent rounded-pill">-9%</span>
+                            <span class="product-item_sale-instalment rounded-pill">Trả góp 0%</span>
+                        </div>
+                        <div class="product-item_img">
+                            <img src="./images/Hình web/máy ảnh/Nikon_z8_85.990.000.jpg" alt="">
+                        </div>
+                        <h4 class="product-item_name">Nikon Z8</h4>
+                        <div class="product-item_price d-flex justify-content-between">
+                            <span class="product-item_price-current">85.990.000<small><sub><u>đ</u></sub></small></span>
+                            <span class="product-item_price-old">93.300.000<small><sub><u>đ</u></sub></small></span>
+                        </div>
+                        <div class="product-item_action d-flex justify-content-between">
+                            <span class="product-item_rating">
+                                4.9<i class="fa-solid fa-star product-item_rating-icon"></i>(10)
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </span>
+                        </div>
+                        <button class="product-item_basket rounded-pill">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <span>Thêm vào giỏ hàng</span>
+                        </button>
+
+                    </a>
+                </div>
+                
+            </div>
+
+            <div class="row">
+                <div class="col-sm-3 product">
+                    <a class="product-item">
+                        <div class="product-item_sale d-flex justify-content-between">
+                            <span class="product-item_sale-percent rounded-pill">-10%</span>
+                            <span class="product-item_sale-instalment rounded-pill">Trả góp 0%</span>
+                        </div>
+                        <div class="product-item_img">
+                            <img src="./images/Hình web/máy ảnh/Panasonic_lumix_lx100_2.20.000.000.jpg" alt="">
+                        </div>
+                        <h4 class="product-item_name">Panasonic Lumix Lx100</h4>
+                        <div class="product-item_price d-flex justify-content-between">
+                            <span class="product-item_price-current">20.000.000<small><sub><u>đ</u></sub></small></span>
+                            <span class="product-item_price-old">22.000.000.<small><sub><u>đ</u></sub></small></span>
+                        </div>
+                        <div class="product-item_action d-flex justify-content-between">
+                            <span class="product-item_rating">
+                                4.9<i class="fa-solid fa-star product-item_rating-icon"></i>(10)
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </span>
+                        </div>
+                        <button class="product-item_basket rounded-pill">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <span>Thêm vào giỏ hàng</span>
+                        </button>
+
+                    </a>
+                </div>
+                
+                <div class="col-sm-3 product">
+                    <a class="product-item">
+                        <div class="product-item_sale d-flex justify-content-between">
+                            <span class="product-item_sale-percent rounded-pill">-11%</span>
+                            <span class="product-item_sale-instalment rounded-pill">Trả góp 0%</span>
+                        </div>
+                        <div class="product-item_img">
+                            <img src="./images/Hình web/máy ảnh/Panasonic_lumix_s5_2_38.990.000(47.990.000-9.000.000).jpg" alt="">
+                        </div>
+                        <h4 class="product-item_name">Panasonic Lumix S5</h4>
+                        <div class="product-item_price d-flex justify-content-between">
+                            <span class="product-item_price-current">38.990.000<small><sub><u>đ</u></sub></small></span>
+                            <span class="product-item_price-old">41.790.000<small><sub><u>đ</u></sub></small></span>
+                        </div>
+                        <div class="product-item_action d-flex justify-content-between">
+                            <span class="product-item_rating">
+                                4.9<i class="fa-solid fa-star product-item_rating-icon"></i>(10)
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </span>
+                        </div>
+                        <button class="product-item_basket rounded-pill">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <span>Thêm vào giỏ hàng</span>
+                        </button>
+
+                    </a>
+                </div>
+
+                <div class="col-sm-3 product">
+                    <a class="product-item">
+                        <div class="product-item_sale d-flex justify-content-between">
+                            <span class="product-item_sale-percent rounded-pill">-17%</span>
+                            <span class="product-item_sale-instalment rounded-pill">Trả góp 0%</span>
+                        </div>
+                        <div class="product-item_img">
+                            <img src="./images/Hình web/máy ảnh/Panasonis_lumix_dc_s1h_93.890.000.jpg" alt="">
+                        </div>
+                        <h4 class="product-item_name">Panasonis Lumix DC S1H</h4>
+                        <div class="product-item_price d-flex justify-content-between">
+                            <span class="product-item_price-current">93.890.000<small><sub><u>đ</u></sub></small></span>
+                            <span class="product-item_price-old">105.500.000<small><sub><u>đ</u></sub></small></span>
+                        </div>
+                        <div class="product-item_action d-flex justify-content-between">
+                            <span class="product-item_rating">
+                                4.9<i class="fa-solid fa-star product-item_rating-icon"></i>(10)
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </span>
+                        </div>
+                        <button class="product-item_basket rounded-pill">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <span>Thêm vào giỏ hàng</span>
+                        </button>
+
+                    </a>
+                </div>
+
+                <div class="col-sm-3 product">
+                    <a class="product-item">
+                        <div class="product-item_sale d-flex justify-content-between">
+                            <span class="product-item_sale-percent rounded-pill">-15%</span>
+                            <span class="product-item_sale-instalment rounded-pill">Trả góp 0%</span>
+                        </div>
+                        <div class="product-item_img">
+                            <img src="./images/Hình web/máy ảnh/Powershot_g7_x_mark_3_16.490.000.jpg" alt="">
+                        </div>
+                        <h4 class="product-item_name">Powershot G7X Mark 3</h4>
+                        <div class="product-item_price d-flex justify-content-between">
+                            <span class="product-item_price-current">16.490.000<small><sub><u>đ</u></sub></small></span>
+                            <span class="product-item_price-old">17.500.000<small><sub><u>đ</u></sub></small></span>
+                        </div>
+                        <div class="product-item_action d-flex justify-content-between">
+                            <span class="product-item_rating">
+                                4.9<i class="fa-solid fa-star product-item_rating-icon"></i>(10)
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </span>
+                        </div>
+                        <button class="product-item_basket rounded-pill">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <span>Thêm vào giỏ hàng</span>
+                        </button>
+
+                    </a>
+                </div>
+                
+            </div>
+
+            
+
+            
+
+            <div class="row">
+                <div class="col-sm-3 product">
+                    <a class="product-item">
+                        <div class="product-item_sale d-flex justify-content-between">
+                            <span class="product-item_sale-percent rounded-pill">-18%</span>
+                            <span class="product-item_sale-instalment rounded-pill">Trả góp 0%</span>
+                        </div>
+                        <div class="product-item_img">
+                            <img src="./images/Hình web/máy ảnh/Sony_zv_e10_17.390.000.jpg" alt="">
+                        </div>
+                        <h4 class="product-item_name">Sony ZV E10</h4>
+                        <div class="product-item_price d-flex justify-content-between">
+                            <span class="product-item_price-current">17.390.000<small><sub><u>đ</u></sub></small></span>
+                            <span class="product-item_price-old">19.600.000<small><sub><u>đ</u></sub></small></span>
+                        </div>
+                        <div class="product-item_action d-flex justify-content-between">
+                            <span class="product-item_rating">
+                                4.9<i class="fa-solid fa-star product-item_rating-icon"></i>(10)
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </span>
+                        </div>
+                        <button class="product-item_basket rounded-pill">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <span>Thêm vào giỏ hàng</span>
+                        </button>
+
+                    </a>
+                </div>
+                
+                <div class="col-sm-3 product">
+                    <a class="product-item">
+                        <div class="product-item_sale d-flex justify-content-between">
+                            <span class="product-item_sale-percent rounded-pill">-12%</span>
+                            <span class="product-item_sale-instalment rounded-pill">Trả góp 0%</span>
+                        </div>
+                        <div class="product-item_img">
+                            <img src="./images/Hình web/máy ảnh/Sony_zv_1_ii_4_2000x2000_21.490.000.jpg" alt="">
+                        </div>
+                        <h4 class="product-item_name">Sony ZV 1 II 4</h4>
+                        <div class="product-item_price d-flex justify-content-between">
+                            <span class="product-item_price-current">21.490.000<small><sub><u>đ</u></sub></small></span>
+                            <span class="product-item_price-old">23.900.000<small><sub><u>đ</u></sub></small></span>
+                        </div>
+                        <div class="product-item_action d-flex justify-content-between">
+                            <span class="product-item_rating">
+                                4.9<i class="fa-solid fa-star product-item_rating-icon"></i>(10)
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </span>
+                        </div>
+                        <button class="product-item_basket rounded-pill">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <span>Thêm vào giỏ hàng</span>
+                        </button>
+
+                    </a>
+                </div>
+
+                <div class="col-sm-3 product">
+                    <a class="product-item">
+                        <div class="product-item_sale d-flex justify-content-between">
+                            <span class="product-item_sale-percent rounded-pill">-10%</span>
+                            <span class="product-item_sale-instalment rounded-pill">Trả góp 0%</span>
+                        </div>
+                        <div class="product-item_img">
+                            <img src="./images/Hình web/máy ảnh/sony-alpha-a6400-kit-16-50mm-black-chinh-hang3-500x500.jpg" alt="">
+                        </div>
+                        <h4 class="product-item_name">Sony Alpha A6400 Kit 16 50mm</h4>
+                        <div class="product-item_price d-flex justify-content-between">
+                            <span class="product-item_price-current">21.990.000<small><sub><u>đ</u></sub></small></span>
+                            <span class="product-item_price-old">23.100.000<small><sub><u>đ</u></sub></small></span>
+                        </div>
+                        <div class="product-item_action d-flex justify-content-between">
+                            <span class="product-item_rating">
+                                4.9<i class="fa-solid fa-star product-item_rating-icon"></i>(10)
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </span>
+                        </div>
+                        <button class="product-item_basket rounded-pill">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <span>Thêm vào giỏ hàng</span>
+                        </button>
+
+                    </a>
+                </div>
+
+                <div class="col-sm-3 product">
+                    <a class="product-item">
+                        <div class="product-item_sale d-flex justify-content-between">
+                            <span class="product-item_sale-percent rounded-pill">-10%</span>
+                            <span class="product-item_sale-instalment rounded-pill">Trả góp 0%</span>
+                        </div>
+                        <div class="product-item_img">
+                            <img src="./images/Hình web/máy ảnh/Sony_a9_2_82.990.000.jpg" alt="">
+                        </div>
+                        <h4 class="product-item_name">Sony A9 2</h4>
+                        <div class="product-item_price d-flex justify-content-between">
+                            <span class="product-item_price-current">82.990.000<small><sub><u>đ</u></sub></small></span>
+                            <span class="product-item_price-old">90.900.000<small><sub><u>đ</u></sub></small></span>
+                        </div>
+                        <div class="product-item_action d-flex justify-content-between">
+                            <span class="product-item_rating">
+                                4.9<i class="fa-solid fa-star product-item_rating-icon"></i>(10)
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </span>
+                        </div>
+                        <button class="product-item_basket rounded-pill">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <span>Thêm vào giỏ hàng</span>
+                        </button>
+
+                    </a>
+                </div>
+                
+            </div>
+
+            
+            <div class="row">
+                <ul class="pagination-sanpham justify-content-center">
+                    <li class="page-item-previous-icon"><a class="page-link" href="#">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a></li>
+                    <li class="page-item "><a class="page-link" href="mayanh.html">1</a></li>
+                    <li class="page-item"><a class="page-link" href="mayanh-page-2.html">2</a></li>
+                    <li class="page-item"><a class="page-link" href="mayanh-page-3.html">3</a></li>
+                    <li class="page-item-next-icon"><a class="page-link" href="#">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a></li>
+                  </ul>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3">
+                    <a href="trangchu.html"><img class="logo_footer mx-auto d-block" src="./images/Logo/logo_name.png"
+                            alt="Tech shop"></a>
+                </div>
+
+                <div class="col-sm-3">
+                    <h4>BẠN CẦN HỖ TRỢ</h4>
+                    <div class="list-group">
+                        <p>
+                            <i class="fa-solid fa-phone"></i>
+                            (00)00000000
+                        </p>
+
+                        <p>
+                            <i class="fa-solid fa-envelope"></i>
+                            student@student.ctu.edu.vn
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Địa chỉ: Số 134, Đường 3/2, Phường Xuân Khánh, Quận Ninh Kiều, Thành phố Cần Thơ
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <h4>HÃY THEO DÕI CHÚNG TÔI TRÊN</h4>
+                    <div class="list-group">
+                        <a href="#" class="social-media-icon">
+                            <i class="fa-brands fa-facebook"></i>
+                            Facebook
+                        </a>
+                        <a href="#" class="social-media-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                            Instagram
+                        </a>
+                        <a href="#" class="social-media-icon">
+                            <i class="fa-brands fa-twitter"></i>
+                            Twitter
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-3 ">
+                    <h4>THANH TOÁN</h4>
+                    <div class="list-group">
+                        <span>
+                            <i class="fa-brands fa-cc-visa"></i>
+                            <i class="fa-brands fa-cc-paypal"></i>
+                        </span>
+
+                        <span>
+                            <i class="fa-brands fa-cc-mastercard"></i>
+                            <i class="fa-brands fa-dhl"></i>
+                        </span>
+
+                        <span>
+                            <i class="fa-brands fa-cc-jcb"></i>
+                            <i class="fa-brands fa-cc-amex"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <p>Copyright &copy 2023 - Bản quyền thuộc về Tech Shop</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

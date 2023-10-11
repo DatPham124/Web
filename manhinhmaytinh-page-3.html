@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Màn hình máy tính</title>
+    <link rel="icon" type="image/x-icon" href="./images/Logo/logo_icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    
+    <!-- Font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- Font-Icons -->
+    <script src="https://kit.fontawesome.com/30d0976aea.js" crossorigin="anonymous"></script>
+    <!-- boostrap -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <script src="./bootstrap/js/bootstrap.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/sanpham.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 ">
+                    <div class="logo">
+                        <a href="trangchu.html"><img class="img_logo img-center" src="./images/Logo/logo_name.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center header_search">
+                    <form class="" role="search">
+                        <input class="search-input" type="text" placeholder="Bạn cần tìm sản phẩm nào...">
+                        <a href=""><i class="search-icon fa-solid fa-magnifying-glass"></i></a>
+                    </form>
+                </div>
+                <div class="col-md-4 header-inner-item">
+                    <div class="header_login "><a href="dangnhap.html">Đăng nhập</a></div>
+                    <div class="header_sign-up"><a href="dangky.html">Đăng ký</a></div>
+                    <a class="header_cart" href="giohang.html">
+                        <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                        <span>Giỏ hàng</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-sm header_nav">
+            <button class="navbar-toggler nav-btn-menu" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="collapsibleNavbar">
+                <ul class="nav-list navbar-nav nav-justified">
+                    <li class="nav-item">
+                        <a class="nav-item-a" href="trangchu.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item-a" href="gioithieu.html">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item nav_more">
+                        <a class="nav-item-a " href="sanpham.html">
+                            Sản phẩm
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <div>
+                                <ul class="nav_more-product">
+                                    <li class="more-product-item">
+                                        <a class="more-product-item-a" href="dienthoai.html">
+                                            <i class="fa-solid fa-mobile-screen-button more-pro-item-icon"></i>
+                                            Điện thoại
+                                        </a>
+                                    </li>
+                                    <li class="more-product-item">
+                                        <a class="more-product-item-a" href="tablet.html">
+                                            <i class="fa-solid fa-tablet-screen-button more-pro-item-icon"></i>
+                                            Tablet
+                                        </a>
+                                    </li>
+                                    <li class="more-product-item">
+                                        <a class="more-product-item-a" href="laptop.html">
+                                            <i class="fa-solid fa-laptop more-pro-item-icon"></i>
+                                            Laptop
+                                        </a>
+                                    </li>
+                                    <li class="more-product-item">
+                                        <a class="more-product-item-a" href="pc.html">
+                                            <i class="fa-solid fa-computer more-pro-item-icon"></i>
+                                            PC
+                                        </a>
+                                    </li>
+                                    <li class="more-product-item">
+                                        <a class="more-product-item-a" href="tivi.html">
+                                            <i class="fa-solid fa-tv more-pro-item-icon"></i>
+                                            Tivi
+                                        </a>
+                                    </li>
+                                    <li class="more-product-item">
+                                        <a class="more-product-item-a" href="camera.html">
+                                            <i class="fa-solid fa-camera more-pro-item-icon"></i>
+                                            Máy ảnh
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item-a" href="tintuc.html">Tin tức</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+
+        
+        
+    </header>
+
+    <!-- CONTAINER -->
+    <main class="">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-3 product">
+                    <a class="product-item">
+                        <div class="product-item_sale d-flex justify-content-between">
+                            <span class="product-item_sale-percent rounded-pill">-5%</span>
+                            <span class="product-item_sale-instalment rounded-pill">Trả góp 0%</span>
+                        </div>
+                        <div class="product-item_img">
+                            <img src="./images/Hình web/Màn hình máy tính/HP EliteOne 840 G9 AIO i5 12500.jpg" alt="">
+                        </div>
+                        <h4 class="product-item_name">HP EliteOne 840 G9 AIO i5 12500</h4>
+                        <div class="product-item_price d-flex justify-content-between">
+                            <span class="product-item_price-current">28.550.000<small><sub><u>đ</u></sub></small></span>
+                            <span class="product-item_price-old">29.490.000<small><sub><u>đ</u></sub></small></span>
+                        </div>
+                        <div class="product-item_action d-flex justify-content-between">
+                            <span class="product-item_rating">
+                                4.9<i class="fa-solid fa-star product-item_rating-icon"></i>(10)
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </span>
+                        </div>
+                        <button class="product-item_basket rounded-pill">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <span>Thêm vào giỏ hàng</span>
+                        </button>
+
+                    </a>
+                </div>
+
+                <div class="col-sm-3 product">
+                    <a class="product-item">
+                        <div class="product-item_sale d-flex justify-content-between">
+                            <span class="product-item_sale-percent rounded-pill">-10%</span>
+                            <span class="product-item_sale-instalment rounded-pill">Trả góp 0%</span>
+                        </div>
+                        <div class="product-item_img">
+                            <img src="./images/Hình web/Màn hình máy tính/HP ProOne 440 G9 AIO i5 12500T.jpg" alt="">
+                        </div>
+                        <h4 class="product-item_name">HP ProOne 440 G9 AIO i5 12500T</h4>
+                        <div class="product-item_price d-flex justify-content-between">
+                            <span class="product-item_price-current">23.890.000<small><sub><u>đ</u></sub></small></span>
+                            <span class="product-item_price-old">25.900.000<small><sub><u>đ</u></sub></small></span>
+                        </div>
+                        <div class="product-item_action d-flex justify-content-between">
+                            <span class="product-item_rating">
+                                4.9<i class="fa-solid fa-star product-item_rating-icon"></i>(10)
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </span>
+                        </div>
+                        <button class="product-item_basket rounded-pill">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <span>Thêm vào giỏ hàng</span>
+                        </button>
+
+                    </a>
+                </div>
+
+                <div class="col-sm-3 product">
+                    <a class="product-item">
+                        <div class="product-item_sale d-flex justify-content-between">
+                            <span class="product-item_sale-percent rounded-pill">-7%</span>
+                            <span class="product-item_sale-instalment rounded-pill">Trả góp 0%</span>
+                        </div>
+                        <div class="product-item_img">
+                            <img src="./images/Hình web/Màn hình máy tính/HP ProOne 440 G9 AIO i7 12700T.jpg" alt="">
+                        </div>
+                        <h4 class="product-item_name">HP ProOne 440 G9 AIO i7 12700T</h4>
+                        <div class="product-item_price d-flex justify-content-between">
+                            <span class="product-item_price-current">24.990.000<small><sub><u>đ</u></sub></small></span>
+                            <span class="product-item_price-old">26.900.000<small><sub><u>đ</u></sub></small></span>
+                        </div>
+                        <div class="product-item_action d-flex justify-content-between">
+                            <span class="product-item_rating">
+                                4.9<i class="fa-solid fa-star product-item_rating-icon"></i>(10)
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </span>
+                        </div>
+                        <button class="product-item_basket rounded-pill">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <span>Thêm vào giỏ hàng</span>
+                        </button>
+
+                    </a>
+                </div>
+
+                <div class="col-sm-3 product">
+                    <a class="product-item">
+                        <div class="product-item_sale d-flex justify-content-between">
+                            <span class="product-item_sale-percent rounded-pill">-10%</span>
+                            <span class="product-item_sale-instalment rounded-pill">Trả góp 0%</span>
+                        </div>
+                        <div class="product-item_img">
+                            <img src="./images/Hình web/Màn hình máy tính/Màn hình Asus ProArt PA247CV 23.8 inch.jpg" alt="">
+                        </div>
+                        <h4 class="product-item_name">Màn hình Asus ProArt PA247CV 23.8 inch</h4>
+                        <div class="product-item_price d-flex justify-content-between">
+                            <span class="product-item_price-current">26.990.000<small><sub><u>đ</u></sub></small></span>
+                            <span class="product-item_price-old">29.500.000<small><sub><u>đ</u></sub></small></span>
+                        </div>
+                        <div class="product-item_action d-flex justify-content-between">
+                            <span class="product-item_rating">
+                                4.9<i class="fa-solid fa-star product-item_rating-icon"></i>(10)
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </span>
+                        </div>
+                        <button class="product-item_basket rounded-pill">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <span>Thêm vào giỏ hàng</span>
+                        </button>
+
+                    </a>
+                </div>
+                
+            </div>
+
+            <div class="row">
+                <div class="col-sm-3 product">
+                    <a class="product-item">
+                        <div class="product-item_sale d-flex justify-content-between">
+                            <span class="product-item_sale-percent rounded-pill">-15%</span>
+                            <span class="product-item_sale-instalment rounded-pill">Trả góp 0%</span>
+                        </div>
+                        <div class="product-item_img">
+                            <img src="./images/Hình web/Màn hình máy tính/Asus ExpertCenter AIO A5402WVAK i5 1340P.jpg" alt="">
+                        </div>
+                        <h4 class="product-item_name">Asus ExpertCenter AIO A5402WVAK i5 1340P</h4>
+                        <div class="product-item_price d-flex justify-content-between">
+                            <span class="product-item_price-current">23.000.000<small><sub><u>đ</u></sub></small></span>
+                            <span class="product-item_price-old">25.900.000<small><sub><u>đ</u></sub></small></span>
+                        </div>
+                        <div class="product-item_action d-flex justify-content-between">
+                            <span class="product-item_rating">
+                                4.9<i class="fa-solid fa-star product-item_rating-icon"></i>(10)
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </span>
+                        </div>
+                        <button class="product-item_basket rounded-pill">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <span>Thêm vào giỏ hàng</span>
+                        </button>
+
+                    </a>
+                </div>
+                
+                <div class="col-sm-3 product">
+                    <a class="product-item">
+                        <div class="product-item_sale d-flex justify-content-between">
+                            <span class="product-item_sale-percent rounded-pill">-17%</span>
+                            <span class="product-item_sale-instalment rounded-pill">Trả góp 0%</span>
+                        </div>
+                        <div class="product-item_img">
+                            <img src="./images/Hình web/Màn hình máy tính/asus-expertcenter-aio-a3402wbat-i5-wa013w-1.jpg" alt="">
+                        </div>
+                        <h4 class="product-item_name">Asus Expertcenter Aio A3402wbat i5 Aa013w</h4>
+                        <div class="product-item_price d-flex justify-content-between">
+                            <span class="product-item_price-current">20.490.000<small><sub><u>đ</u></sub></small></span>
+                            <span class="product-item_price-old">22.590.000<small><sub><u>đ</u></sub></small></span>
+                        </div>
+                        <div class="product-item_action d-flex justify-content-between">
+                            <span class="product-item_rating">
+                                4.9<i class="fa-solid fa-star product-item_rating-icon"></i>(10)
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </span>
+                        </div>
+                        <button class="product-item_basket rounded-pill">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <span>Thêm vào giỏ hàng</span>
+                        </button>
+
+                    </a>
+                </div>
+
+                <div class="col-sm-3 product">
+                    <a class="product-item">
+                        <div class="product-item_sale d-flex justify-content-between">
+                            <span class="product-item_sale-percent rounded-pill">-16%</span>
+                            <span class="product-item_sale-instalment rounded-pill">Trả góp 0%</span>
+                        </div>
+                        <div class="product-item_img">
+                            <img src="./images/Hình web/Màn hình máy tính/HP AIO 22 dd2002d i5 1235U.jpg" alt="">
+                        </div>
+                        <h4 class="product-item_name">HP AIO 22 dd2002d i5 1235U</h4>
+                        <div class="product-item_price d-flex justify-content-between">
+                            <span class="product-item_price-current">19.490.000<small><sub><u>đ</u></sub></small></span>
+                            <span class="product-item_price-old">21.200.000<small><sub><u>đ</u></sub></small></span>
+                        </div>
+                        <div class="product-item_action d-flex justify-content-between">
+                            <span class="product-item_rating">
+                                4.9<i class="fa-solid fa-star product-item_rating-icon"></i>(10)
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </span>
+                        </div>
+                        <button class="product-item_basket rounded-pill">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <span>Thêm vào giỏ hàng</span>
+                        </button>
+
+                    </a>
+                </div>
+
+                <div class="col-sm-3 product">
+                    <a class="product-item">
+                        <div class="product-item_sale d-flex justify-content-between">
+                            <span class="product-item_sale-percent rounded-pill">-9%</span>
+                            <span class="product-item_sale-instalment rounded-pill">Trả góp 0%</span>
+                        </div>
+                        <div class="product-item_img">
+                            <img src="./images/Hình web/Màn hình máy tính/HP AIO ProOne 240 G9 i3 1215U.jpg" alt="">
+                        </div>
+                        <h4 class="product-item_name">HP AIO ProOne 240 G9 i3 1215U</h4>
+                        <div class="product-item_price d-flex justify-content-between">
+                            <span class="product-item_price-current">15.990.000<small><sub><u>đ</u></sub></small></span>
+                            <span class="product-item_price-old">16.900.000<small><sub><u>đ</u></sub></small></span>
+                        </div>
+                        <div class="product-item_action d-flex justify-content-between">
+                            <span class="product-item_rating">
+                                4.9<i class="fa-solid fa-star product-item_rating-icon"></i>(10)
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </span>
+                        </div>
+                        <button class="product-item_basket rounded-pill">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <span>Thêm vào giỏ hàng</span>
+                        </button>
+
+                    </a>
+                </div>
+                
+            </div>
+
+            
+
+            <div class="row">
+                
+
+                <div class="col-sm-3 product">
+                    <a class="product-item">
+                        <div class="product-item_sale d-flex justify-content-between">
+                            <span class="product-item_sale-percent rounded-pill">-12%</span>
+                            <span class="product-item_sale-instalment rounded-pill">Trả góp 0%</span>
+                        </div>
+                        <div class="product-item_img">
+                            <img src="./images/Hình web/Màn hình máy tính/Màn hình Asus VA27EHF 27 inch.jpg" alt="">
+                        </div>
+                        <h4 class="product-item_name">Màn hình Asus VA27EHF 27 inch</h4>
+                        <div class="product-item_price d-flex justify-content-between">
+                            <span class="product-item_price-current">3.490.000<small><sub><u>đ</u></sub></small></span>
+                            <span class="product-item_price-old">4.900.000<small><sub><u>đ</u></sub></small></span>
+                        </div>
+                        <div class="product-item_action d-flex justify-content-between">
+                            <span class="product-item_rating">
+                                4.9<i class="fa-solid fa-star product-item_rating-icon"></i>(10)
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </span>
+                        </div>
+                        <button class="product-item_basket rounded-pill">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <span>Thêm vào giỏ hàng</span>
+                        </button>
+
+                    </a>
+                </div>
+                
+                <div class="col-sm-3 product">
+                    <a class="product-item">
+                        <div class="product-item_sale d-flex justify-content-between">
+                            <span class="product-item_sale-percent rounded-pill">-11%</span>
+                            <span class="product-item_sale-instalment rounded-pill">Trả góp 0%</span>
+                        </div>
+                        <div class="product-item_img">
+                            <img src="./images/Hình web/Màn hình máy tính/Màn hình ViewSonic VA2209-H 21.5 inch.jpg" alt="">
+                        </div>
+                        <h4 class="product-item_name">Màn hình ViewSonic VA2209-H 21.5 inch</h4>
+                        <div class="product-item_price d-flex justify-content-between">
+                            <span class="product-item_price-current">1.990.000<small><sub><u>đ</u></sub></small></span>
+                            <span class="product-item_price-old">2.790.000<small><sub><u>đ</u></sub></small></span>
+                        </div>
+                        <div class="product-item_action d-flex justify-content-between">
+                            <span class="product-item_rating">
+                                4.9<i class="fa-solid fa-star product-item_rating-icon"></i>(10)
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </span>
+                        </div>
+                        <button class="product-item_basket rounded-pill">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <span>Thêm vào giỏ hàng</span>
+                        </button>
+
+                    </a>
+                </div>
+
+                <div class="col-sm-3 product">
+                    <a class="product-item">
+                        <div class="product-item_sale d-flex justify-content-between">
+                            <span class="product-item_sale-percent rounded-pill">-17%</span>
+                            <span class="product-item_sale-instalment rounded-pill">Trả góp 0%</span>
+                        </div>
+                        <div class="product-item_img">
+                            <img src="./images/Hình web/Màn hình máy tính/Màn hình Samsung LS24R350FZEXXV 23.8 inch.jpg" alt="">
+                        </div>
+                        <h4 class="product-item_name">Màn hình Samsung LS24R350FZEXXV 23.8 inch</h4>
+                        <div class="product-item_price d-flex justify-content-between">
+                            <span class="product-item_price-current">2.890.000<small><sub><u>đ</u></sub></small></span>
+                            <span class="product-item_price-old">3.500.000<small><sub><u>đ</u></sub></small></span>
+                        </div>
+                        <div class="product-item_action d-flex justify-content-between">
+                            <span class="product-item_rating">
+                                4.9<i class="fa-solid fa-star product-item_rating-icon"></i>(10)
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </span>
+                        </div>
+                        <button class="product-item_basket rounded-pill">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <span>Thêm vào giỏ hàng</span>
+                        </button>
+
+                    </a>
+                </div>
+
+                
+
+                <div class="col-sm-3 product">
+                    <a class="product-item">
+                        <div class="product-item_sale d-flex justify-content-between">
+                            <span class="product-item_sale-percent rounded-pill">-10%</span>
+                            <span class="product-item_sale-instalment rounded-pill">Trả góp 0%</span>
+                        </div>
+                        <div class="product-item_img">
+                            <img src="./images/Hình web/Màn hình máy tính/Màn hình LG 24MP500-B.ATV 23.8 inch.jpg" alt="">
+                        </div>
+                        <h4 class="product-item_name">Màn hình LG 24MP500-B.ATV 23.8 inch</h4>
+                        <div class="product-item_price d-flex justify-content-between">
+                            <span class="product-item_price-current">2.990.000<small><sub><u>đ</u></sub></small></span>
+                            <span class="product-item_price-old">3.300.000<small><sub><u>đ</u></sub></small></span>
+                        </div>
+                        <div class="product-item_action d-flex justify-content-between">
+                            <span class="product-item_rating">
+                                4.9<i class="fa-solid fa-star product-item_rating-icon"></i>(10)
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </span>
+                        </div>
+                        <button class="product-item_basket rounded-pill">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <span>Thêm vào giỏ hàng</span>
+                        </button>
+
+                    </a>
+                </div>
+                
+            </div>
+            
+
+            <div class="row">
+                <div class="col-sm-3 product">
+                    <a class="product-item">
+                        <div class="product-item_sale d-flex justify-content-between">
+                            <span class="product-item_sale-percent rounded-pill">-18%</span>
+                            <span class="product-item_sale-instalment rounded-pill">Trả góp 0%</span>
+                        </div>
+                        <div class="product-item_img">
+                            <img src="./images/Hình web/Màn hình máy tính/Màn hình Asus TUF Gaming VG249Q1A 23.8 inch.jpg" alt="">
+                        </div>
+                        <h4 class="product-item_name">Màn hình Asus TUF Gaming VG249Q1A 23.8 inch</h4>
+                        <div class="product-item_price d-flex justify-content-between">
+                            <span class="product-item_price-current">5.390.000<small><sub><u>đ</u></sub></small></span>
+                            <span class="product-item_price-old">7.600.000<small><sub><u>đ</u></sub></small></span>
+                        </div>
+                        <div class="product-item_action d-flex justify-content-between">
+                            <span class="product-item_rating">
+                                4.9<i class="fa-solid fa-star product-item_rating-icon"></i>(10)
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </span>
+                        </div>
+                        <button class="product-item_basket rounded-pill">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <span>Thêm vào giỏ hàng</span>
+                        </button>
+
+                    </a>
+                </div>
+                
+                <div class="col-sm-3 product">
+                    <a class="product-item">
+                        <div class="product-item_sale d-flex justify-content-between">
+                            <span class="product-item_sale-percent rounded-pill">-10%</span>
+                            <span class="product-item_sale-instalment rounded-pill">Trả góp 0%</span>
+                        </div>
+                        <div class="product-item_img">
+                            <img src="./images/Hình web/Màn hình máy tính/Màn hình MSI Gaming G244F 23.8 inch.jpg" alt="">
+                        </div>
+                        <h4 class="product-item_name">Màn hình MSI Gaming G244F 23.8 inch</h4>
+                        <div class="product-item_price d-flex justify-content-between">
+                            <span class="product-item_price-current">3.900.000<small><sub><u>đ</u></sub></small></span>
+                            <span class="product-item_price-old">4.100.000.<small><sub><u>đ</u></sub></small></span>
+                        </div>
+                        <div class="product-item_action d-flex justify-content-between">
+                            <span class="product-item_rating">
+                                4.9<i class="fa-solid fa-star product-item_rating-icon"></i>(10)
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </span>
+                        </div>
+                        <button class="product-item_basket rounded-pill">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <span>Thêm vào giỏ hàng</span>
+                        </button>
+
+                    </a>
+                </div>
+
+                <div class="col-sm-3 product">
+                    <a class="product-item">
+                        <div class="product-item_sale d-flex justify-content-between">
+                            <span class="product-item_sale-percent rounded-pill">-15%</span>
+                            <span class="product-item_sale-instalment rounded-pill">Trả góp 0%</span>
+                        </div>
+                        <div class="product-item_img">
+                            <img src="./images/Hình web/Màn hình máy tính/Màn hình MSI PRO MP223 21.45 inch.jpg" alt="">
+                        </div>
+                        <h4 class="product-item_name">Màn hình MSI PRO MP223 21.45 inch</h4>
+                        <div class="product-item_price d-flex justify-content-between">
+                            <span class="product-item_price-current">1.490.000<small><sub><u>đ</u></sub></small></span>
+                            <span class="product-item_price-old">2.500.000<small><sub><u>đ</u></sub></small></span>
+                        </div>
+                        <div class="product-item_action d-flex justify-content-between">
+                            <span class="product-item_rating">
+                                4.9<i class="fa-solid fa-star product-item_rating-icon"></i>(10)
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </span>
+                        </div>
+                        <button class="product-item_basket rounded-pill">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <span>Thêm vào giỏ hàng</span>
+                        </button>
+
+                    </a>
+                </div>
+
+                <div class="col-sm-3 product">
+                    <a class="product-item">
+                        <div class="product-item_sale d-flex justify-content-between">
+                            <span class="product-item_sale-percent rounded-pill">-10%</span>
+                            <span class="product-item_sale-instalment rounded-pill">Trả góp 0%</span>
+                        </div>
+                        <div class="product-item_img">
+                            <img src="./images/Hình web/Màn hình máy tính/Màn hình cong Samsung S3 S36C LS27C360EAEXXV 27 inch.jpg" alt="">
+                        </div>
+                        <h4 class="product-item_name">Màn hình cong Samsung S3 S36C LS27C360EAEXXV 27 inch</h4>
+                        <div class="product-item_price d-flex justify-content-between">
+                            <span class="product-item_price-current">3.990.000<small><sub><u>đ</u></sub></small></span>
+                            <span class="product-item_price-old">4.500.000<small><sub><u>đ</u></sub></small></span>
+                        </div>
+                        <div class="product-item_action d-flex justify-content-between">
+                            <span class="product-item_rating">
+                                4.9<i class="fa-solid fa-star product-item_rating-icon"></i>(10)
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </span>
+                        </div>
+                        <button class="product-item_basket rounded-pill">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <span>Thêm vào giỏ hàng</span>
+                        </button>
+
+                    </a>
+                </div>
+
+                
+                
+            </div>
+
+            
+
+            
+            <div class="row">
+                <ul class="pagination-sanpham justify-content-center">
+                    <li class="page-item-previous-icon"><a class="page-link" href="#">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a></li>
+                    <li class="page-item "><a class="page-link" href="manhinhmaytinh.html">1</a></li>
+                    <li class="page-item"><a class="page-link" href="manhinhmaytinh-page-2.html">2</a></li>
+                    <li class="page-item"><a class="page-link" href="manhinhmaytinh-page-3.html">3</a></li>
+                    <li class="page-item-next-icon"><a class="page-link" href="#">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a></li>
+                  </ul>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3">
+                    <a href="trangchu.html"><img class="logo_footer mx-auto d-block" src="./images/Logo/logo_name.png"
+                            alt="Tech shop"></a>
+                </div>
+
+                <div class="col-sm-3">
+                    <h4>BẠN CẦN HỖ TRỢ</h4>
+                    <div class="list-group">
+                        <p>
+                            <i class="fa-solid fa-phone"></i>
+                            (00)00000000
+                        </p>
+
+                        <p>
+                            <i class="fa-solid fa-envelope"></i>
+                            student@student.ctu.edu.vn
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Địa chỉ: Số 134, Đường 3/2, Phường Xuân Khánh, Quận Ninh Kiều, Thành phố Cần Thơ
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <h4>HÃY THEO DÕI CHÚNG TÔI TRÊN</h4>
+                    <div class="list-group">
+                        <a href="#" class="social-media-icon">
+                            <i class="fa-brands fa-facebook"></i>
+                            Facebook
+                        </a>
+                        <a href="#" class="social-media-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                            Instagram
+                        </a>
+                        <a href="#" class="social-media-icon">
+                            <i class="fa-brands fa-twitter"></i>
+                            Twitter
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-3 ">
+                    <h4>THANH TOÁN</h4>
+                    <div class="list-group">
+                        <span>
+                            <i class="fa-brands fa-cc-visa"></i>
+                            <i class="fa-brands fa-cc-paypal"></i>
+                        </span>
+
+                        <span>
+                            <i class="fa-brands fa-cc-mastercard"></i>
+                            <i class="fa-brands fa-dhl"></i>
+                        </span>
+
+                        <span>
+                            <i class="fa-brands fa-cc-jcb"></i>
+                            <i class="fa-brands fa-cc-amex"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <p>Copyright &copy 2023 - Bản quyền thuộc về Tech Shop</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
