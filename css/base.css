@@ -11,6 +11,7 @@
     --lightgrey-color: lightgrey;
     --grey-color: grey;
     --red-color: rgb(205, 2, 2);
+    --container-bg-color: #f2f2f2;
     --navbar-height: 34px;
     --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
 }
