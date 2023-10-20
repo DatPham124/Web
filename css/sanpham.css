@@ -25,10 +25,11 @@ main .row{
     cursor: pointer;
 }
 
-@keyframes growth{
+/* Đã đem qua bên base.css */
+/* @keyframes growth{
     from{transform: translate(0,0);}
     to{transform: translate(0,-4px);}
-}
+} */
 .product-item{
     text-decoration: none;
     color: var(--text-color);

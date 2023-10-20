@@ -38,6 +38,11 @@ html {
     }
 }
 
+@keyframes growth{
+    from{transform: translate(0,0);}
+    to{transform: translate(0,-4px);}
+}
+
 .img-center {
     display: block;
     margin: auto;
