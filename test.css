@@ -1,0 +1,15 @@
+.container {
+    width: 200px; /* Giới hạn chiều rộng của phần tử cha */
+    height: 2em; /* Giới hạn chiều cao của phần tử cha (tương đương 2 dòng) */
+    overflow: hidden; /* Ẩn phần dư thừa */
+    position: relative; /* Cần để vị trí tương đối cho con */
+  }
+  
+  .text {
+    white-space: pre-line; /* Cho phép văn bản xuống dòng */
+    position: absolute; /* Cần để vị trí tuyệt đối cho con */
+    width: 100%; /* Chiều rộng 100% của phần tử con */
+    height: 100%; /* Chiều cao 100% của phần tử con */
+    top: 0; /* Đặt phần tử con ở trên cùng */
+  }
+  

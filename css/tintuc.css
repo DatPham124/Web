@@ -1,13 +1,6 @@
 .p_tintuc{
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 500;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    height: 2.3px;
-    color: var(--text-color);
 }
 
 .ul_tintuc {
@@ -24,13 +17,18 @@
     background-color: #f5f5f5; /* Màu nền xám cho mục chẵn */
 }
 
-.hovertest:hover {
-    background-color: var(--primary-color);
-}
+
 
 .link {
     color: inherit; /* Sử dụng màu văn bản mặc định của thẻ <a> */
     text-decoration: none; /* Loại bỏ gạch chân */
+}
+
+.hovertest:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-5px); /* Dịch chuyển phần tử lên trên khi hover */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Bóng đổ */
+    background-color: var(--primary-color);
 }
 
 .hovertest{
@@ -57,16 +55,12 @@
 
 .table2 {
     margin: 10px;
+    margin-top: 0px;
     padding-top: 20px; /* Đặt khoảng cách giữa nội dung và viền */
     background-color: #fff;
     border: 1px solid lightgray;
     border-radius: 15px;
 }
-
-
-
-
-
 
 .hoverfornews{
     height: fit-content;
