@@ -22,12 +22,14 @@ main .row{
     border-color: #fff;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
+    cursor: pointer;
 }
 
-@keyframes growth{
+/* Đã đem qua bên base.css */
+/* @keyframes growth{
     from{transform: translate(0,0);}
     to{transform: translate(0,-4px);}
-}
+} */
 .product-item{
     text-decoration: none;
     color: var(--text-color);
@@ -55,6 +57,16 @@ main .row{
     padding: 10px 20px;
 }
 
+.product-item_name{
+    padding-bottom: 0px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    
+    
+}
+
 .product-item_name:hover{
     color: var(--green-color);
     text-decoration: underline;
@@ -75,6 +87,15 @@ main .row{
 
 .product-item_rating-icon{
     color: var(--star-gold-color);
+}
+
+.heart-icon-empty{
+    display: inline-block;
+}
+
+.heart-icon-full{
+    display: none;
+    color: red;
 }
 
 .product-item_basket{
@@ -104,24 +125,31 @@ main .row{
     
 }
 
-.pagination-sanpham{
+.pagination{
     font-size: 1.5rem ;
     display: flex;
     list-style: none;
     color: var(--text-color);
+    padding: 15px;
+    background-color: var(--white-color);
+    margin-right: calc(-0.5 * 1.5rem);
+    margin-left: calc(-0.5 * 1.5rem);
 }
 
-.page-item, .page-item-next-icon, .page-item-previous-icon{
+.page-item, .page-item-next, .page-item-previous{
     padding: 10px;
     margin: 7px;
     font-weight: 600;
 }
 
-.page-item:hover, .page-item-next-icon:hover, .page-item-previous-icon:hover{
+.page-item:hover, .page-item-next:hover, .page-item-previous:hover{
+    color: var(--green-color);
+}
+
+.pagination .active{
     color: var(--green-color);
     text-decoration: underline;
 }
-
  /* reponsive */
 @media(min-width: 576px) and (max-width: 992px){
     .product-item_sale {

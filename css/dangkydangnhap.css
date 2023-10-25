@@ -1,0 +1,47 @@
+.header-text{
+    font-size: 25px;
+    margin: 30px 0px 0px 0px;
+}
+
+.header-logo{
+    width: auto;
+    height: auto;
+    margin: 0px 0px 0px 69px;
+}
+
+.bg-container{
+    width: 100%;
+}
+
+
+
+.bg-form{
+    background-color: var(--primary-color);
+}
+
+.fs-title{
+    font-size: 25px;
+}
+
+.fs-md{
+    font-size: 15px ;
+}
+
+/* .p-input{
+    padding-top: 10px;
+    padding-bottom: 10px;
+} */
+
+.mt-form {
+    align-items: center;
+  }
+
+.fgpw{
+    font-size:12px;
+    text-decoration: none;
+}
+
+.dk{
+    font-size: 15px;
+    text-decoration: none;
+}
