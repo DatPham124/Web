@@ -101,6 +101,7 @@
 .news-wrap img{
     width: 100%;
     border-radius: 5px;
+    height: 200px;
 }
 
 .news-wrap p{
@@ -109,6 +110,16 @@
     margin: 0;
 }
 
+.custom-page-size a.page-link  {
+    font-size: 10px; /* Điều chỉnh kích thước phù hợp */
+    padding: 10px 15px; /* Điều chỉnh khoảng cách bên trong số trang */
+  }
 
+  .custom-size a.page-link {
+    font-size: 10px; /* Điều chỉnh kích thước phù hợp */
+    padding: 10px 15px; /* Điều chỉnh khoảng cách bên trong dấu "Previous" và "Next" */
+  }
+  
+  
 
 
