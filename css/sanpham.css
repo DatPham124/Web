@@ -132,8 +132,7 @@ main .row{
     color: var(--text-color);
     padding: 15px;
     background-color: var(--white-color);
-    margin-right: calc(-0.5 * 1.5rem);
-    margin-left: calc(-0.5 * 1.5rem);
+    margin: 0 calc(-0.5 * 1.5rem);
 }
 
 .page-item, .page-item-next, .page-item-previous{
