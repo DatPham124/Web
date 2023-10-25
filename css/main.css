@@ -188,3 +188,7 @@ footer h4{
 .logo_footer {
     width: 15vw;
 }
+
+.no-pointer{
+    cursor: default;
+}
