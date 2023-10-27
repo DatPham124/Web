@@ -1,0 +1,44 @@
+.duongvien{
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-top: 5px;
+    min-width: 20%;
+}
+
+.duongvien > div{
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-top: 5px;
+    min-width: 20%;
+}
+
+.numbersofdev {
+    display: table;
+    width: 100%;
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.numbersofdev .num {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #4a90e2;
+    padding: 14px;
+}
+
+.numbersofdev .text {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    color: #4a90e2;
+    padding: 6px;
+}
