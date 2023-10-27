@@ -1,17 +1,23 @@
+a {
+    text-decoration: none;
+    /* Loại bỏ gạch chân */
+    color: black;
+    /* Đổi màu chữ (ví dụ màu đen) */
+}
+
+
 .news-title {
     font-weight: 700;
     padding-top: 1rem;
     margin-bottom: 1.5rem;
 }
 
-
-
-.p_tintuc{
+.p_tintuc {
     font-size: 1.4rem;
     font-weight: 500;
     color: var(--text-color);
     margin: 0;
-    
+
     /* Ten sp dai
     line-height: 2rem;
     max-height: 4rem;
@@ -23,60 +29,77 @@
 }
 
 .ul_tintuc {
-    list-style-type: none; /* Loại bỏ dấu hiệu danh sách mặc định */
+    list-style-type: none;
+    /* Loại bỏ dấu hiệu danh sách mặc định */
     padding: 0;
-    
+
 }
 
 .ul_tintuc li:nth-child(odd) {
-    background-color: #fff; /* Màu nền trắng cho mục lẻ */
+    background-color: #fff;
+    /* Màu nền trắng cho mục lẻ */
 }
 
 .ul_tintuc li:nth-child(even) {
-    background-color: #f5f5f5; /* Màu nền xám cho mục chẵn */
+    background-color: #f5f5f5;
+    /* Màu nền xám cho mục chẵn */
 }
 
 
 
 .link {
-    color: inherit; /* Sử dụng màu văn bản mặc định của thẻ <a> */
-    text-decoration: none; /* Loại bỏ gạch chân */
+    color: inherit;
+    /* Sử dụng màu văn bản mặc định của thẻ <a> */
+    text-decoration: none;
+    /* Loại bỏ gạch chân */
 }
 
 .hovertest:hover {
     background-color: var(--primary-color);
-    transform: translateY(-5px); /* Dịch chuyển phần tử lên trên khi hover */
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Bóng đổ */
+    transform: translateY(-5px);
+    /* Dịch chuyển phần tử lên trên khi hover */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    /* Bóng đổ */
     background-color: var(--primary-color);
 }
 
-.hovertest{
-   padding: 10px 10px;
+.hovertest {
+    padding: 10px 10px;
 }
 
-.td_p{
+.td_p {
     width: 90%;
     /* display: block; */
-  }
+}
 
-  .news-item {
+.news-item {
     border-radius: 10px;
-    border:5px 1px solid #ccc; /* Viền mỏng */
-    margin:0px 30px; /* Khoảng cách giữa các mục tin tức */
-  }
-
-.news-item p{
-    margin:10px 30px;
+    border: 5px 1px solid #ccc;
+    /* Viền mỏng */
+    margin: 0px 30px;
+    /* Khoảng cách giữa các mục tin tức */
 }
 
-.body{
-     background-color: #f0f0f0;
+.news-item p {
+    margin: 10px 30px;
 }
+
+.body {
+    background-color: #f0f0f0;
+    padding-top: 10px;
+}
+
+.body2 {
+    background-color: #f0f0f0;
+    padding-top: 3rem;
+}
+
 
 .table2 {
     margin: 10px;
     margin-top: 0px;
-    padding-top: 20px; /* Đặt khoảng cách giữa nội dung và viền */
+    padding-top: 20px;
+    /* Đặt khoảng cách giữa nội dung và viền */
     background-color: #fff;
     border: 1px solid lightgray;
     border-radius: 15px;
@@ -85,7 +108,7 @@
 
 
 
-.news-wrap{
+.news-wrap {
     background-color: white;
     border-radius: 10px;
     padding: 8px;
@@ -93,33 +116,86 @@
 }
 
 .news-wrap:hover {
-    transform: translateY(-5px); /* Dịch chuyển phần tử lên trên khi hover */
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Bóng đổ */
+    transform: translateY(-5px);
+    /* Dịch chuyển phần tử lên trên khi hover */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    /* Bóng đổ */
     background-color: var(--primary-color);
 }
 
-.news-wrap img{
+.news-wrap img {
     width: 100%;
     border-radius: 5px;
     height: 200px;
 }
 
-.news-wrap p{
+.news-wrap p {
     font-size: 1.3rem;
     font-weight: 600;
     margin: 0;
 }
 
-.custom-page-size a.page-link  {
-    font-size: 10px; /* Điều chỉnh kích thước phù hợp */
-    padding: 10px 15px; /* Điều chỉnh khoảng cách bên trong số trang */
-  }
+.custom-page-size a.page-link {
+    font-size: 10px;
+    /* Điều chỉnh kích thước phù hợp */
+    padding: 10px 15px;
+    /* Điều chỉnh khoảng cách bên trong số trang */
+}
 
-  .custom-size a.page-link {
-    font-size: 10px; /* Điều chỉnh kích thước phù hợp */
-    padding: 10px 15px; /* Điều chỉnh khoảng cách bên trong dấu "Previous" và "Next" */
-  }
-  
-  
+.custom-size a.page-link {
+    font-size: 10px;
+    /* Điều chỉnh kích thước phù hợp */
+    padding: 10px 15px;
+    /* Điều chỉnh khoảng cách bên trong dấu "Previous" và "Next" */
+}
 
 
+.main {
+    background-color: #fff;
+}
+
+.a-tintuc {
+    margin-top: 10px;
+}
+
+.main p {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.main ul {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.main img{
+    width: 100%;
+}
+
+.h1-tintuc2, .head-tintuc{
+    margin-left: 20px; /* Điều này đặt khoảng cách từ trái sang là 20px */
+}
+
+
+.h1-tintuc2{
+    margin-top: 3px;
+}
+
+.head-tintuc{
+    font-weight: 625;
+}
+
+.main{
+    padding-top: 20px; 
+}
+
+.divider {
+    border-radius: 10px;
+    margin-left: 20px; 
+    border: none;
+    height: 3px;
+    background-color: var( --grey-color); 
+    margin-top: 20px; 
+    margin-bottom: 30px; 
+    width: 10%;
+}
