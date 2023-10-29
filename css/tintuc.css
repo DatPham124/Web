@@ -26,6 +26,10 @@ a {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2; */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .ul_tintuc {
@@ -133,6 +137,11 @@ a {
     font-size: 1.3rem;
     font-weight: 600;
     margin: 0;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .custom-page-size a.page-link {
