@@ -178,7 +178,7 @@ a {
 
 
 .h1-tintuc2{
-    margin-top: 3px;
+    margin-top: 1px;
 }
 
 .head-tintuc{
@@ -189,9 +189,15 @@ a {
     padding-top: 20px; 
 }
 
+.pagination .page-item.active .page-link {
+    background-color: #007BFF; /* Màu nền của trang hiện tại */
+    color: #fff; /* Màu chữ của trang hiện tại */
+    font-weight: bold; /* Chữ đậm cho trang hiện tại */
+}
+
 .divider {
     border-radius: 10px;
-    margin-left: 20px; 
+    margin-left: 22px; 
     border: none;
     height: 3px;
     background-color: var( --grey-color); 
@@ -199,3 +205,6 @@ a {
     margin-bottom: 30px; 
     width: 10%;
 }
+
+
+
