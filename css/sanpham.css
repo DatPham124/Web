@@ -22,7 +22,7 @@ main .row{
     border-color: #fff;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
-    cursor: pointer;
+    
 }
 
 /* Đã đem qua bên base.css */
@@ -52,10 +52,15 @@ main .row{
     height: auto;
 }
 
+.product-item_img:hover{
+    cursor: pointer;
+}
+
 .product-item_name, .product-item_action, .product-item_price, .product-item_basket{
     margin: auto;
     padding: 10px 20px;
 }
+
 
 .product-item_name{
     padding-bottom: 0px;
@@ -67,9 +72,16 @@ main .row{
     
 }
 
+
+
 .product-item_name:hover{
     color: var(--green-color);
     text-decoration: underline;
+    cursor: pointer;
+}
+
+.product-item_action{
+    font-size: 1.4rem;
 }
 
 .product-item_price-current{
@@ -98,7 +110,7 @@ main .row{
     color: red;
 }
 
-.product-item_basket{
+.product-item_basket, .product-modal-item_basket{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -108,21 +120,73 @@ main .row{
     border: 2px solid black;
 }
 
-.product-item_basket span{
+.product-item_basket span, .product-modal-item_basket span{
     font-size: 1.5rem;
     font-weight: 500
 }
 
-.product-item_basket i{
+.product-item_basket i, .product-modal-item_basket i{
     margin: 0 7px;
     font-size: 1.8rem;
 }
 
-.product-item_basket:hover{
+.product-item_basket:hover, .product-modal-item_basket:hover{
     background-color: var(--green-color);
     color: white;
     border: 2px solid var(--green-color);
     
+}
+
+
+.product-modal-dialog{
+    max-width: 65%;
+}
+
+.product-modal-header{
+    display: flex;
+    flex-shrink: 0;
+    align-items: unset;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: none;
+}
+
+.product-btn-close{
+    margin: 0;
+    padding: 1rem;
+    font-size: 1.7rem;
+}
+
+.product-modal-title{
+    font-size: 2.5vw;
+}
+
+.product_modal-item_sale-percent{
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    background-color:var(--green-color);
+    color: #fff;
+    font-size: 1.5vw;
+    line-height: 1.6rem;
+    padding: 0.5vw 1vw;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.product_modal-item_sale-percent::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    border-top: 10px solid var(--green-color);
+    border-left: 10px solid transparent;
+    filter: brightness(60%);
+}
+
+.product-modal-footer{
+    justify-content: center;
+    border-top: none;
 }
 
 .pagination{
@@ -143,6 +207,10 @@ main .row{
 
 .page-item:hover, .page-item-next:hover, .page-item-previous:hover{
     color: var(--green-color);
+}
+
+.pagination li:hover{
+    cursor: pointer;
 }
 
 .pagination .active{
