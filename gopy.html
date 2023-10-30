@@ -28,7 +28,6 @@
 </head>
 
 <body>
-
     <!-- HEADER -->
     <header>
         <div class="container-fluid">
@@ -126,29 +125,48 @@
         <div id="wrapper">
                 <div class="container">
                     <div class="row justify-content-center my-5">
-                         <form action="" class="col-md-4 bg-form p-3 my-3">
-                            <h1 class="text-center text-uppercase h3 py-3 fs-title">Đăng nhập</h1>
+                         <form action="" class="col-md-4 bg-form p-3 my-3" >
+                            <h1 class="text-center text-uppercase h3 py-3 fs-title">GÓP Ý</h1>
                             <div class="form-group">
-                                <label for="username"></label>
-                                <input type="text" name="username" id="username" class="form-control fs-md"
-                                placeholder="Email/ Số điện thoại/ Tên đăng nhập" required>
+                                <label for="fullname"></label>
+                                <input type="text" name="fullname" id="fullname" class="form-control  fs-md"
+                                placeholder="Họ và tên" required>
                             </div>
                             <div class="form-group">
-                                <label for="password"></label>
-                                <input type="password" name="password" id="password" class="form-control fs-md"
-                                placeholder="Mật khẩu" required>
+                                <label for="gender"></label>
+                                <div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" name="gender" id="gender" value="male" class="form-check-input" checked>
+                                    <label for="male" class="fs-md form-check-label">Nam</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" name="gender" id="gender" value="female" class="form-check-input">
+                                    <label for="female" class="fs-md form-check-label">Nữ</label>
+                                    </div>
+                                </div>
                             </div>
-                             </br>
-                             <div class="row-sm-2 ">
-                            <input type="submit" value="Đăng nhập" class="btn-primary btn my-3 fs-md px-5">
-                            <a href="" class="col-sm-3 fgpw ms-1 "> Quên mật khẩu</a>
-                            <a href="dangky.html" class="col-sm-6 fgpw">Chưa có tài khoản? Đăng ký ngay</a>
+                            <div class="form-group">
+                                <label for="email"></label>
+                                <input type="text" name="email" id="email" class="form-control fs-md"
+                                placeholder="Email" required>
                             </div>
+                            <div class="form-group">
+                                <label for="sdt"></label>
+                                <input type="text" name="sdt" id="sdt" class="form-control fs-md"
+                                placeholder="Số điện thoại liên lạc">
+                            </div>                        
+                            <div class="form-group py-3">
+                                <textarea name="gopy" id="" class="form-control fs-md" rows="4"
+                                 placeholder="Nhập nội dung cần góp ý..."></textarea>
+                            </div>
+                            <div class="col flex-container">
+                                <input type="submit" value="Gửi" class="btn-primary btn fs-md px-5">  
+                             </div>
                          </form>
                     </div>
                 </div>
          </div>
-  
+
     
 
     <!-- FOOTER -->

@@ -17,6 +17,7 @@
 
 .bg-form{
     background-color: var(--primary-color);
+    border-radius: 5px;
 }
 
 .fs-title{
@@ -44,4 +45,9 @@
 .dk{
     font-size: 15px;
     text-decoration: none;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: flex-end;
 }

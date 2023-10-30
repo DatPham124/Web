@@ -30,26 +30,101 @@
 <body>
     <!-- HEADER -->
     <header>
-        <div class="container-fluid" >
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-md-2 header-logo">
+                <div class="col-md-2 ">
                     <div class="logo">
                         <a href="trangchu.html"><img class="img_logo img-center" src="./images/Logo/logo_name.png" alt=""></a>
                     </div>
                 </div>
-                <div class="col-sm-auto">
-                    <div class="h2 text-start header-text">Đăng ký</div>
-                    </div>
+                <div class="col-md-6 text-center header_search">
+                    <form class="" role="search">
+                        <input class="search-input" type="text" placeholder="Bạn cần tìm sản phẩm nào...">
+                        <a href=""><i class="search-icon fa-solid fa-magnifying-glass"></i></a>
+                    </form>
+                </div>
+                <div class="col-md-4 header-inner-item">
+                    <div class="header_login "><a href="dangnhap.html">Đăng nhập</a></div>
+                    <div class="header_sign-up"><a href="dangky.html">Đăng ký</a></div>
+                    <a class="header_cart" href="giohang.html">
+                        <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                        <span>Giỏ hàng</span>
+                    </a>
                 </div>
             </div>
         </div>
-    </header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-sm header_nav">
+            <button class="navbar-toggler nav-btn-menu" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="collapsibleNavbar">
+                <ul class="nav-list navbar-nav nav-justified">
+                    <li class="nav-item">
+                        <a class="nav-item-a" href="trangchu.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item-a" href="gioithieu.html">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item nav_more">
+                        <a class="nav-item-a " href="sanpham.html">
+                            Sản phẩm
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <div>
+                                <ul class="nav_more-product">
+                                    <li class="more-product-item">
+                                        <a class="more-product-item-a" href="dienthoai.html">
+                                            <i class="fa-solid fa-mobile-screen-button more-pro-item-icon"></i>
+                                            Điện thoại
+                                        </a>
+                                    </li>
+                                    <li class="more-product-item">
+                                        <a class="more-product-item-a" href="tablet.html">
+                                            <i class="fa-solid fa-tablet-screen-button more-pro-item-icon"></i>
+                                            Tablet
+                                        </a>
+                                    </li>
+                                    <li class="more-product-item">
+                                        <a class="more-product-item-a" href="laptop.html">
+                                            <i class="fa-solid fa-laptop more-pro-item-icon"></i>
+                                            Laptop
+                                        </a>
+                                    </li>
+                                    <li class="more-product-item">
+                                        <a class="more-product-item-a" href="pc.html">
+                                            <i class="fa-solid fa-computer more-pro-item-icon"></i>
+                                            PC
+                                        </a>
+                                    </li>
+                                    <li class="more-product-item">
+                                        <a class="more-product-item-a" href="tivi.html">
+                                            <i class="fa-solid fa-tv more-pro-item-icon"></i>
+                                            Tivi
+                                        </a>
+                                    </li>
+                                    <li class="more-product-item">
+                                        <a class="more-product-item-a" href="mayanh.html">
+                                            <i class="fa-solid fa-camera more-pro-item-icon"></i>
+                                            Máy ảnh
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item-a" href="tintuc.html">Tin tức</a>
+                    </li>
+                </ul>
 
+            </div>
+        </nav>
+    </header>
     <!-- CONTAINER -->
 
         <div id="wrapper">
                 <div class="container">
-                    <div class="row justify-content-end my-5">
+                    <div class="row justify-content-center my-5">
                          <form action="" class="col-md-4 bg-form p-3 my-3" >
                             <h1 class="text-center text-uppercase h3 py-3 fs-title">Đăng ký tài khoản</h1>
                             <div class="form-group">
@@ -90,11 +165,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row  justify-content-between">
-                                <input type="submit" value="Đăng ký" class="btn-primary btn btn-lg my-3 fs-md">
-                                <a href="dangnhap.html" class="col-sm-7 dk">Đã có tài khoản? Đăng nhập ngay</a>
+                            <div class="col">
+                                <input type="submit" value="Đăng ký" class="btn-primary btn my-3 fs-md px-5">  
                              </div>
-                            
+                             <a href="dangnhap.html" class="col-sm-7 dk justify-content-end">Đã có tài khoản? Đăng nhập ngay</a>
                          </form>
                     </div>
                 </div>
