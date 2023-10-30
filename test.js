@@ -1,29 +1,49 @@
+let thisPage = 1;
+let limit = 6;
+let list = document.querySelectorAll('.list .item');
 
-  var container = document.querySelector(".container");
-  var text = document.querySelector(".text");
+function loadItem(){
+    let beginGet = limit * (thisPage - 1);
+    let endGet = limit * thisPage - 1;
+    list.forEach((item, key)=>{
+        if(key >= beginGet && key <= endGet){
+            item.style.display = 'block';
+        }else{
+            item.style.display = 'none';
+        }
+    })
+    listPage();
+}
+loadItem();
+function listPage(){
+    let count = Math.ceil(list.length / limit);
+    document.querySelector('.listPage').innerHTML = '';
 
-  // Kiểm tra chiều cao của phần tử con và số dòng
-  var lineHeight = parseInt(getComputedStyle(text).lineHeight);
-  var maxHeight = parseInt(getComputedStyle(container).height);
-
-  if (text.clientHeight > maxHeight) {
-    // Vượt quá 2 dòng, cắt văn bản
-    var numLines = Math.floor(maxHeight / lineHeight);
-    var textContent = text.textContent.trim();
-    var splitIndex = textContent.indexOf("\n", numLines * 20); // Assuming 20 characters per line
-
-    if (splitIndex > -1) {
-      text.textContent = textContent.substring(0, splitIndex) + " ...";
+    if(thisPage != 1){
+        let prev = document.createElement('li');
+        prev.innerText = 'PREV';
+        prev.setAttribute('onclick', "changePage(" + (thisPage - 1) + ")");
+        document.querySelector('.listPage').appendChild(prev);
     }
-  }
-<td>
-                                                    <img src="images\Hình trang tin tức\z-fold.jpg" alt="twbs"
-                                                        width="60" height="60"
-                                                        class="rounded-circle flex-shrink-0 pic_tictuc">
-                                                </td>
-                                                <td class="td_p">
-                                                    <p class="p_tintuc text-truncate" style="display: inline;">
-                                                        Samsung Galaxy Fold - chiêu bài tiếp thị hay thực sự là con bài
-                                                        thay đổi cuộc chơi?</p>
-                                                </td>
 
+    for(i = 1; i <= count; i++){
+        let newPage = document.createElement('li');
+        newPage.innerText = i;
+        if(i == thisPage){
+            newPage.classList.add('active');
+        }
+        newPage.setAttribute('onclick', "changePage(" + i + ")");
+        document.querySelector('.listPage').appendChild(newPage);
+    }
+
+    if(thisPage != count){
+        let next = document.createElement('li');
+        next.innerText = 'NEXT';
+        next.setAttribute('onclick', "changePage(" + (thisPage + 1) + ")");
+        document.querySelector('.listPage').appendChild(next);
+    }
+}
+function changePage(i){
+    thisPage = i;
+    loadItem();
+}
