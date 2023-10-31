@@ -1,47 +1,13 @@
-/* .duongvien{
-    display: inline-block;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding-top: 5px;
-    min-width: 20%;
+.body {
+    background-color: #f0f0f0;
+    padding-top: 10px;
 }
 
-.duongvien > div{
-    display: inline-block;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding-top: 5px;
-    min-width: 20%;
+.news-title {
+    font-weight: 700;
+    padding-top: 1rem;
+    margin-bottom: 1.5rem;
 }
-
-.numbersofdev {
-    display: table;
-    width: 100%;
-    clear: both;
-    overflow: hidden;
-    margin-bottom: 30px;
-    margin-top: 30px;
-}
-
-.numbersofdev .num {
-    display: block;
-    text-align: center;
-    font-weight: bold;
-    font-size: 50px;
-    margin-bottom: 10px;
-    color: #4a90e2;
-    padding: 14px;
-}
-
-.numbersofdev .text {
-    display: block;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 15px;
-    color: #4a90e2;
-    padding: 6px;
-} */
 
 .reason-why{
     display: flex;
