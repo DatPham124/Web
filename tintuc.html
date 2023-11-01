@@ -35,14 +35,14 @@
             <div class="row">
                 <div class="col-md-2 ">
                     <div class="logo">
-                        <a href="trangchu.html"><img class="img_logo img-center" src="./images/Logo/logo_name.png"
-                                alt=""></a>
+                        <a href="trangchu.html"><img class="img_logo img-center" src="./images/Logo/logo_name.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-md-6 text-center header_search">
-                    <form class="" role="search">
-                        <input class="search-input" type="text" placeholder="Bạn cần tìm sản phẩm nào...">
-                        <a href=""><i class="search-icon fa-solid fa-magnifying-glass"></i></a>
+                    <form class="" name="search-form" method="get" action="timkiem.html" role="search">
+                        <input class="search-input" id="search" name="contents" type="search"  placeholder="Bạn cần tìm sản phẩm nào..." onkeypress="TKP(e)">
+                        <!-- <a href=""><i class="search-icon fa-solid fa-magnifying-glass"></i></a> -->
+                        <button class="btn" onclick="Tim()"><i class="search-icon fa-solid fa-magnifying-glass"></i></button>
                     </form>
                 </div>
                 <div class="col-md-4 header-inner-item">
@@ -57,8 +57,7 @@
         </div>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-sm header_nav">
-            <button class="navbar-toggler nav-btn-menu" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapsibleNavbar">
+            <button class="navbar-toggler nav-btn-menu" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse " id="collapsibleNavbar">
@@ -95,7 +94,7 @@
                                     </li>
                                     <li class="more-product-item">
                                         <a class="more-product-item-a" href="manhinhmaytinh.html">
-                                            <i class="fa-solid fa-computer more-pro-item-icon"></i>
+                                            <i class="fa-solid fa-desktop more-pro-item-icon"></i>
                                             Màn hình máy tính
                                         </a>
                                     </li>
@@ -122,6 +121,11 @@
 
             </div>
         </nav>
+
+
+        
+        
+    </header>
 
 
 
