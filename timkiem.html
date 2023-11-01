@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Shop</title>
+    <link rel="icon" type="image/x-icon" href="./images/Logo/logo_icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- Font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet">
+    <!-- Font-Icons -->
+    <script src="https://kit.fontawesome.com/30d0976aea.js" crossorigin="anonymous"></script>
+    <!-- boostrap -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <script type="text/javascript" src="./bootstrap/js/bootstrap.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Link css -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/trangchu.css">
+    <link rel="stylesheet" href="./css/sanpham.css">
+    <script src="/js/timkiem.js"></script>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script>
+        window.onload=function(){TimKiem();};
+    </script>
+
+    <style>
+        .section-timkiem {
+            background-color: var(--white-color);
+            border-radius: 10px;
+            padding: 2rem 2rem;
+            min-height: 200px;
+        }
+        .result, #detail {
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 ">
+                    <div class="logo">
+                        <a href="trangchu.html"><img class="img_logo img-center" src="./images/Logo/logo_name.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center header_search">
+                    <form class="" name="frm-search" method="get" action="timkiem.html" role="search">
+                        <input class="search-input" id="search" name="contents" type="search"  placeholder="Bạn cần tìm sản phẩm nào..." onkeypress="TKP(e)">
+                        <!-- <a href=""><i class="search-icon fa-solid fa-magnifying-glass"></i></a> -->
+                        <button class="btn" onclick="Tim()"><i class="search-icon fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+                <div class="col-md-4 header-inner-item">
+                    <div class="header_login "><a href="dangnhap.html">Đăng nhập</a></div>
+                    <div class="header_sign-up"><a href="dangky.html">Đăng ký</a></div>
+                    <a class="header_cart" href="giohang.html">
+                        <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                        <span>Giỏ hàng</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-sm header_nav">
+            <button class="navbar-toggler nav-btn-menu" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="collapsibleNavbar">
+                <ul class="nav-list navbar-nav nav-justified">
+                    <li class="nav-item">
+                        <a class="nav-item-a" href="trangchu.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item-a" href="gioithieu.html">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item nav_more">
+                        <a class="nav-item-a no-pointer" href="#">
+                            Sản phẩm
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <div>
+                                <ul class="nav_more-product">
+                                    <li class="more-product-item">
+                                        <a class="more-product-item-a" href="dienthoai.html">
+                                            <i class="fa-solid fa-mobile-screen-button more-pro-item-icon"></i>
+                                            Điện thoại
+                                        </a>
+                                    </li>
+                                    <li class="more-product-item">
+                                        <a class="more-product-item-a" href="tablet.html">
+                                            <i class="fa-solid fa-tablet-screen-button more-pro-item-icon"></i>
+                                            Tablet
+                                        </a>
+                                    </li>
+                                    <li class="more-product-item">
+                                        <a class="more-product-item-a" href="laptop.html">
+                                            <i class="fa-solid fa-laptop more-pro-item-icon"></i>
+                                            Laptop
+                                        </a>
+                                    </li>
+                                    <li class="more-product-item">
+                                        <a class="more-product-item-a" href="manhinhmaytinh.html">
+                                            <i class="fa-solid fa-desktop more-pro-item-icon"></i>
+                                            Màn hình máy tính
+                                        </a>
+                                    </li>
+                                    <li class="more-product-item">
+                                        <a class="more-product-item-a" href="tivi.html">
+                                            <i class="fa-solid fa-tv more-pro-item-icon"></i>
+                                            Tivi
+                                        </a>
+                                    </li>
+                                    <li class="more-product-item">
+                                        <a class="more-product-item-a" href="mayanh.html">
+                                            <i class="fa-solid fa-camera more-pro-item-icon"></i>
+                                            Máy ảnh
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item-a" href="tintuc.html">Tin tức</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        
+    </header>
+
+    <!-- CONTAINER -->
+    <div class="wraped_main">
+        <main class="container-fluid">
+            <div class="section-timkiem container">
+                <div id="detail"></div>
+                <div class="result">Kết quả trả về:</div>
+            </div>
+        </main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3">
+                    <a href="trangchu.html"><img class="logo_footer mx-auto d-block" src="./images/Logo/logo_name.png"
+                            alt="Tech shop"></a>
+                </div>
+
+                <div class="col-sm-3">
+                    <h4>BẠN CẦN HỖ TRỢ</h4>
+                    <div class="list-group">
+                        <p>
+                            <i class="fa-solid fa-phone"></i>
+                            (00)00000000
+                        </p>
+
+                        <p>
+                            <i class="fa-solid fa-envelope"></i>
+                            student@student.ctu.edu.vn
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Địa chỉ: Số 134, Đường 3/2, Phường Xuân Khánh, Quận Ninh Kiều, Thành phố Cần Thơ
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <h4>HÃY THEO DÕI CHÚNG TÔI TRÊN</h4>
+                    <div class="list-group">
+                        <a href="#" class="social-media-icon">
+                            <i class="fa-brands fa-facebook"></i>
+                            Facebook
+                        </a>
+                        <a href="#" class="social-media-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                            Instagram
+                        </a>
+                        <a href="#" class="social-media-icon">
+                            <i class="fa-brands fa-twitter"></i>
+                            Twitter
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-3 ">
+                    <h4>THANH TOÁN</h4>
+                    <div class="list-group">
+                        <span>
+                            <i class="fa-brands fa-cc-visa"></i>
+                            <i class="fa-brands fa-cc-paypal"></i>
+                        </span>
+
+                        <span>
+                            <i class="fa-brands fa-cc-mastercard"></i>
+                            <i class="fa-brands fa-dhl"></i>
+                        </span>
+
+                        <span>
+                            <i class="fa-brands fa-cc-jcb"></i>
+                            <i class="fa-brands fa-cc-amex"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <p>Copyright &copy 2023 - Bản quyền thuộc về Tech Shop</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <div class="backtop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div> -->
+    <a href="#" class="backtop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function() {
+        $(window).scroll(function() {
+            if($(this).scrollTop()) {
+                $('.backtop').fadeIn();
+            } else {
+                $('.backtop').fadeOut();
+            }
+        });
+        // $(".backtop").click(function() {
+        //     $('html').animate({scrollTop: 0}, 500);
+        // });
+    });
+</script>
+
+</html>
