@@ -22,10 +22,12 @@
 
 .fs-title{
     font-size: 25px;
+    font-weight: 700;
 }
 
 .fs-md{
     font-size: 15px ;
+    display: block;
 }
 
 /* .p-input{
@@ -38,16 +40,36 @@
   }
 
 .fgpw{
-    font-size:12px;
+    font-size: 1.4rem;
     text-decoration: none;
 }
 
 .dk{
-    font-size: 15px;
+    font-size: 1.4rem;
     text-decoration: none;
 }
 
 .flex-container{
     display: flex;
     justify-content: flex-end;
+}
+
+.fgpasswd-register{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.8rem;
+}
+
+.wraped_login {
+    margin: 1.8rem 0 1.2rem;
+}
+
+.login-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-btn_item {
+    padding: 0.6rem 8rem;
 }
