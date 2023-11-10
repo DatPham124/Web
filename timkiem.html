@@ -25,7 +25,6 @@
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/trangchu.css">
     <link rel="stylesheet" href="./css/sanpham.css">
-    <script src="/js/timkiem.js"></script>
     <script src="js/jquery-3.6.4.min.js"></script>
     <script>
         window.onload=function(){TimKiem();};
@@ -231,19 +230,6 @@
 </body>
 
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-<script>
-    $(document).ready(function() {
-        $(window).scroll(function() {
-            if($(this).scrollTop()) {
-                $('.backtop').fadeIn();
-            } else {
-                $('.backtop').fadeOut();
-            }
-        });
-        // $(".backtop").click(function() {
-        //     $('html').animate({scrollTop: 0}, 500);
-        // });
-    });
-</script>
+<script src="js/main.js"></script>
 
 </html>

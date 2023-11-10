@@ -23,6 +23,10 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/sanpham.css">
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script>
+		window.onload=function(){TimKiem();};
+	</script>
 </head>
 
 <body>
@@ -36,17 +40,19 @@
                     </div>
                 </div>
                 <div class="col-md-6 text-center header_search">
-                    <form class="" role="search">
-                        <input class="search-input" type="text" placeholder="Bạn cần tìm sản phẩm nào...">
-                        <a href=""><i class="search-icon fa-solid fa-magnifying-glass"></i></a>
+                    <form class="" name="search-form" method="get" action="timkiem.html" role="search">
+                        <input class="search-input" id="search" name="contents" type="search"  placeholder="Bạn cần tìm sản phẩm nào..." onkeypress="TKP(e)">
+                        <!-- <a href=""><i class="search-icon fa-solid fa-magnifying-glass"></i></a> -->
+                        <button class="btn" onclick="Tim()"><i class="search-icon fa-solid fa-magnifying-glass"></i></button>
                     </form>
                 </div>
                 <div class="col-md-4 header-inner-item">
                     <div class="header_login "><a href="dangnhap.html">Đăng nhập</a></div>
                     <div class="header_sign-up"><a href="dangky.html">Đăng ký</a></div>
-                    <a class="header_cart" href="giohang.html">
+                    <a class="header_cart">
                         <i class="fa-solid fa-cart-shopping cart-icon"></i>
                         <span>Giỏ hàng</span>
+                        <span class="header_cart-quantity"></span>
                     </a>
                 </div>
             </div>
@@ -90,7 +96,7 @@
                                     </li>
                                     <li class="more-product-item">
                                         <a class="more-product-item-a" href="manhinhmaytinh.html">
-                                            <i class="fa-solid fa-computer more-pro-item-icon"></i>
+                                            <i class="fa-solid fa-desktop more-pro-item-icon"></i>
                                             Màn hình máy tính
                                         </a>
                                     </li>
@@ -5501,6 +5507,37 @@
                    
             </ul>
         </div>
+
+        <section class="cart">
+            <div class="cart_exit-icon"><i class="fa-solid fa-xmark "></i></div>
+            <div class="cart_title-name"><h1 >Giỏ Hàng</h1></div>
+            
+        <form action="">
+            <table>
+                <thead>
+                    <tr>
+                        <th >Sản phẩm</th>
+                        <th >Giá</th>
+                        <th >Số lượng</th>
+                        <th >Chọn</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                   
+                </tbody>
+                
+            </table>
+            
+            <div class="price-total">
+                <p style="margin: 0;">Tổng tiền:</p>
+                <span ><h4 class="price" style="margin: 0;">0<small><sub><u>đ</u></sub></small></h4></span>
+            </div>
+            <div class="cart_pay-btn">
+                <button type="button" class="btn btn-danger">Thanh Toán</button>
+            </div>
+        </form>
+    </section>
     </main>
 
     <!-- FOOTER -->
@@ -5573,7 +5610,17 @@
             </div>
         </div>
     </footer>
+
+    <!-- <div class="backtop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div> -->
+    <a href="#" class="backtop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
     <script src="js/sanpham.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 
 </body>
 

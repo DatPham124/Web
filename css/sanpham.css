@@ -47,8 +47,13 @@ main .row{
     font-weight: 400;
     padding: 2px;
 }
+.product-item_img{
+    display: flex;
+    justify-content: center;
+}
+    
 .product-item_img img{
-    width: 100%;
+    width: 60%;
     height: auto;
 }
 
@@ -103,14 +108,16 @@ main .row{
 
 .heart-icon-empty{
     display: inline-block;
+    cursor: pointer;
 }
 
 .heart-icon-full{
     display: none;
     color: red;
+    cursor: pointer;
 }
 
-.product-item_basket, .product-modal-item_basket{
+.product-item_basket, .product-modal-item_basket {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -120,7 +127,7 @@ main .row{
     border: 2px solid black;
 }
 
-.product-item_basket span, .product-modal-item_basket span{
+.product-item_basket span, .product-modal-item_basket span {
     font-size: 1.5rem;
     font-weight: 500
 }
@@ -217,6 +224,77 @@ main .row{
     color: var(--green-color);
     text-decoration: underline;
 }
+
+.cart{
+    font-size: 1.5rem;
+}
+
+.cart table tr{
+    text-align: center;
+}
+
+.cart table tbody tr td:first-child{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.cart img{
+    width: 50%;
+}
+
+.cart .cart_product-quantity{
+    width: 30px;
+    cursor: pointer;
+}
+
+.price-total{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+}
+
+.cart{
+    position: fixed;
+    height: 100vh;
+    width: 400px;
+    right: 0;
+    top: 0;
+    overflow: scroll;
+    background-color: var(--primary-color);
+    border-left: 3px solid var(--grey-color);
+    right: -100%;
+    transition: all 0.3s ease;
+}
+
+.cart_exit-icon{
+    display: inline-block;
+    font-size: 25px;
+    padding: 10px;
+}
+.cart_exit-icon:hover{
+    cursor: pointer;
+}
+
+.cart_title-name{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.cart_pay-btn{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.cart_pay-btn button{
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 18vw;
+}
  /* reponsive */
 @media(min-width: 576px) and (max-width: 992px){
     .product-item_sale {
@@ -230,5 +308,22 @@ main .row{
     .product-item_basket span{
         display: none;
     }
+
+    .cart{
+        width: 330px;
+    }
 }
+
+
+@media (max-width: 600px){
+    .cart{
+        width: 100%;
+        border:0;
+    }
+
+    .cart_pay-btn button{
+        width: 50vw;
+    }
+}
+
  /* reponsive */

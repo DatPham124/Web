@@ -222,3 +222,14 @@ footer h4{
 html{
     scroll-behavior: smooth;
 }
+
+.header_cart-quantity{
+    padding: 3px 6px;
+    margin: 5px;
+    background-color: red;
+    color: white;
+    border-radius: 13px;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    display: none;
+}
