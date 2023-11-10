@@ -1,6 +1,8 @@
+//Phân trang
 let thisPage = 1;
-let limit = 4;
-let list = document.querySelectorAll(' .container .row')
+let limit = 3;
+let list = document.querySelectorAll('.col-lg-9 .pb-4')
+console.log(list);
 
 function loadItem() {
     let beginGet = limit*(thisPage-1);
@@ -62,29 +64,3 @@ function changePage(i) {
 }
 
 loadItem();
-
-function heartAct() {
-    let heartIcon = document.querySelectorAll('.heart-icon-empty');   
-    let heartIconRed = document.querySelectorAll('.heart-icon-full');
-    let i;
-   
-    for(i = 0; i<heartIcon.length; i++) {
-        let a = i;
-        heartIcon[i].onclick = function() {
-            heartIcon[a].style.display = 'none';
-            heartIconRed[a].style.display= 'inline-block';
-        }
-    }
-
-    for(i = 0; i<heartIconRed.length; i++) {
-        let a = i;
-        heartIconRed[i].onclick = function() { 
-            heartIconRed[a].style.display = 'none';
-            heartIcon[a].style.display= 'inline-block';
-        }
-    }
-    
-}
-
-
-heartAct();

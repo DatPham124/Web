@@ -233,3 +233,23 @@ html{
     line-height: 1.2rem;
     display: none;
 }
+
+
+.pagination{
+    font-size: 1.5rem ;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: var(--text-color);
+    padding: 15px;
+    margin: 0 calc(-0.5 * 1.5rem);
+}
+
+.pagination li:hover{
+    cursor: pointer;
+}
+
+.pagination .active{
+    color: var(--green-color);
+    text-decoration: underline;
+}

@@ -197,13 +197,7 @@ main .row{
 }
 
 .pagination{
-    font-size: 1.5rem ;
-    display: flex;
-    list-style: none;
-    color: var(--text-color);
-    padding: 15px;
     background-color: var(--white-color);
-    margin: 0 calc(-0.5 * 1.5rem);
 }
 
 .page-item, .page-item-next, .page-item-previous{
@@ -216,14 +210,6 @@ main .row{
     color: var(--green-color);
 }
 
-.pagination li:hover{
-    cursor: pointer;
-}
-
-.pagination .active{
-    color: var(--green-color);
-    text-decoration: underline;
-}
 
 .cart{
     font-size: 1.5rem;
