@@ -17,6 +17,7 @@ a {
     font-weight: 500;
     color: var(--text-color);
     margin: 0;
+    margin-left: 1rem;
 
     /* Ten sp dai
     line-height: 2rem;
@@ -26,6 +27,7 @@ a {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2; */
+
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -96,6 +98,7 @@ a {
 .body2 {
     background-color: #f0f0f0;
     padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 
@@ -168,8 +171,8 @@ a {
 }
 
 .main p {
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.7rem;
+    font-weight: 400;
 }
 
 .main ul {
@@ -178,7 +181,9 @@ a {
 }
 
 .main img{
-    width: 100%;
+    width: 60%; /* Giảm kích thước hình ảnh xuống còn 60% */
+    display: block; /* Đặt hình ảnh là block để có thể căn giữa ngang theo chiều ngang */
+    margin: 0 auto; /* Căn giữa hình ảnh theo chiều ngang */
 }
 
 .h1-tintuc2, .head-tintuc{
@@ -213,6 +218,12 @@ a {
     margin-top: 20px; 
     margin-bottom: 30px; 
     width: 10%;
+}
+
+@media (max-width: 991.20px) {
+    .new-article-column {
+        margin-top: 20px; /* Điều chỉnh khoảng cách theo nhu cầu khi responsive*/
+    }
 }
 
 
