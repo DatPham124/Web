@@ -25,6 +25,12 @@
     font-weight: 700;
 }
 
+.fs-ms{
+    font-size: 12px ;
+    display: block;
+}
+
+
 .fs-md{
     font-size: 15px ;
     display: block;
