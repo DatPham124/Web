@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đổi Mật Khẩu</title>
+    <title>Tech Shop</title>
     <link rel="icon" type="image/x-icon" href="./images/Logo/logo_icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <!-- Font family -->
@@ -24,7 +24,11 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/trangchu.css">
-    <link rel="stylesheet" href="./css/dangkydangnhap.css">
+    <link rel="stylesheet" href="./css/sanpham.css">
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script>
+		window.onload=function(){TimKiem();};
+	</script>
 </head>
 
 <body>
@@ -38,17 +42,19 @@
                     </div>
                 </div>
                 <div class="col-md-6 text-center header_search">
-                    <form class="" role="search">
-                        <input class="search-input" type="text" placeholder="Bạn cần tìm sản phẩm nào...">
-                        <a href=""><i class="search-icon fa-solid fa-magnifying-glass"></i></a>
+                    <form class="search-form" name="search-form" method="get" action="timkiem.html" role="search">
+                        <input class="search-input" id="search" name="contents" type="search"  placeholder="Bạn cần tìm sản phẩm nào..." onkeypress="TKP(e)">
+                        <!-- <a href=""><i class="search-icon fa-solid fa-magnifying-glass"></i></a> -->
+                        <button class="btn search-btn" onclick="Tim()"><i class="search-icon fa-solid fa-magnifying-glass"></i></button>
                     </form>
                 </div>
                 <div class="col-md-4 header-inner-item">
                     <div class="header_login "><a href="dangnhap.html">Đăng nhập</a></div>
                     <div class="header_sign-up"><a href="dangky.html">Đăng ký</a></div>
-                    <a class="header_cart" href="giohang.html">
+                    <a class="header_cart">
                         <i class="fa-solid fa-cart-shopping cart-icon"></i>
                         <span>Giỏ hàng</span>
+                        <span class="header_cart-quantity"></span>
                     </a>
                 </div>
             </div>
@@ -128,31 +134,11 @@
                          <form action="" class="col-md-4 bg-form p-3 my-3" >
                             <h1 class="text-center text-uppercase h3 py-3 fs-title">QUÊN MẬT KHẨU</h1>
                             <div class="form-group">
-                                <label for="username"></label>
-                                <input type="text" name="username" id="username" class="form-control fs-md"
-                                placeholder="Email/ Số điện thoại/ Tên đăng nhập" required>
+                                <label for="email"></label>
+                                <input type="text" name="email" id="email" class="form-control fs-md"
+                                placeholder="Email" >
                             </div>
-<!--                           <div class="form-group">
-                                <label for="password"></label>
-                                <input type="password" name="password" id="password" class="form-control fs-md"
-                                placeholder="Mật khẩu cũ" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="password"></label>
-                                <input type="password" name="newpassword" id="newpassword" class="form-control fs-md"
-                                placeholder="Mật khẩu mới" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="password"></label>
-                                <input type="password" name="checkpassword" id="checkpassword" class="form-control fs-md"
-                                placeholder="Nhập lại mật khẩu" required>
-                            </div>
-
-                            <div class="row-sm-2 wraped_login">
-                                <div class="login-btn">
-                                    <input type="submit" value="Đổi mật khẩu" class="login-btn_item btn-primary btn my-3 fs-md ">
-                                </div>
-                         -->
+                            <p id="errorMessage" class="text-danger mt-3 fs-ms ms-2" hidden></p>
                             </form>
                     </div>
                 </div>
@@ -231,5 +217,11 @@
         </div>
     </footer>
 
+
 </body>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
+
 </html>
