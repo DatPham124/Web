@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng Nhập</title>
+    <title>Tech Shop</title>
     <link rel="icon" type="image/x-icon" href="./images/Logo/logo_icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <!-- Font family -->
@@ -25,6 +25,10 @@
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/trangchu.css">
     <link rel="stylesheet" href="./css/dangkydangnhap.css">
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script>
+		window.onload=function(){TimKiem();};
+	</script>
 </head>
 
 <body>
@@ -39,17 +43,19 @@
                     </div>
                 </div>
                 <div class="col-md-6 text-center header_search">
-                    <form class="" role="search">
-                        <input class="search-input" type="text" placeholder="Bạn cần tìm sản phẩm nào...">
-                        <a href=""><i class="search-icon fa-solid fa-magnifying-glass"></i></a>
+                    <form class="search-form" name="search-form" method="get" action="timkiem.html" role="search">
+                        <input class="search-input" id="search" name="contents" type="search"  placeholder="Bạn cần tìm sản phẩm nào..." onkeypress="TKP(e)">
+                        <!-- <a href=""><i class="search-icon fa-solid fa-magnifying-glass"></i></a> -->
+                        <button class="btn search-btn" onclick="Tim()"><i class="search-icon fa-solid fa-magnifying-glass"></i></button>
                     </form>
                 </div>
                 <div class="col-md-4 header-inner-item">
                     <div class="header_login "><a href="dangnhap.html">Đăng nhập</a></div>
                     <div class="header_sign-up"><a href="dangky.html">Đăng ký</a></div>
-                    <a class="header_cart" href="giohang.html">
+                    <a class="header_cart">
                         <i class="fa-solid fa-cart-shopping cart-icon"></i>
                         <span>Giỏ hàng</span>
+                        <span class="header_cart-quantity"></span>
                     </a>
                 </div>
             </div>
@@ -126,14 +132,13 @@
         <div id="wrapper">
                 <div class="container">
                     <div class="row justify-content-center my-5">
-                        <form action="#" class="col-md-4 bg-form p-3 my-3" method="GET" id="form">
+                        <form action="" class="col-md-4 bg-form p-3 my-3" id="form">
                             <h1 class="text-center text-uppercase h3 py-3 fs-title">Đăng nhập</h1>
                             <div class="form-group">
-                                <label for="username"></label>
-                                <input type="text" name="username" id="username" class="form-control fs-md"
-                                placeholder="Tên đăng nhập" >
+                                <label for="email"></label>
+                                <input type="text" name="email" id="email" class="form-control fs-md"
+                                placeholder="Email" >
                             </div>
-
                             <p id="errorMessage" class="text-danger mt-3 fs-ms ms-2" hidden></p>
 
                             <div class="form-group">
@@ -141,7 +146,6 @@
                                 <input type="password" name="password" id="password" class="form-control fs-md"
                                 placeholder="Mật khẩu" >
                             </div>
-
                             <p id="errorMessage1" class="text-danger mt-3 fs-ms ms-2" hidden></p>
 
                             <div class="row-sm-2 wraped_login">
@@ -239,6 +243,8 @@
     </footer>
 
     <script src="js/validatorLogin.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 
 </body>
 </html>
