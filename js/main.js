@@ -119,7 +119,7 @@ function addCart(productImg,productName,productPrice){
     addtr.innerHTML= trcontent;
     var cartTable = document.querySelector(".cart tbody");
     cartTable.append(addtr);
-    alert("Đã thêm sản phâm vào giỏ hàng");
+    alert("Đã thêm sản phẩm vào giỏ hàng");
     totalCart();
     deleteCart();
     
