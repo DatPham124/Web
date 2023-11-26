@@ -39,6 +39,6 @@ document.getElementById('form').addEventListener('submit', function(event) {
       }
     
       
-      alert('Form submitted successfully!');
+      alert('Đăng nhập thành công!');
      
     }
