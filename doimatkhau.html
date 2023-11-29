@@ -11,8 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
-    rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
     <!-- Font-Icons -->
     <script src="https://kit.fontawesome.com/30d0976aea.js" crossorigin="anonymous"></script>
     <!-- boostrap -->
@@ -26,28 +26,32 @@
     <link rel="stylesheet" href="./css/trangchu.css">
     <link rel="stylesheet" href="./css/sanpham.css">
     <link rel="stylesheet" href="./css/dangkydangnhap.css">
+    <link rel="stylesheet" href="./css/doimatkhau.css">
+    <script src="js/doimatkhau.js"></script>
     <script src="js/jquery-3.6.4.min.js"></script>
     <script>
-		window.onload=function(){TimKiem();};
-	</script>
+        window.onload = function () { TimKiem(); };
+    </script>
 </head>
 
 <body>
-
     <!-- HEADER -->
     <header>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-2 ">
                     <div class="logo">
-                        <a href="trangchu.html"><img class="img_logo img-center" src="./images/Logo/logo_name.png" alt=""></a>
+                        <a href="trangchu.html"><img class="img_logo img-center" src="./images/Logo/logo_name.png"
+                                alt=""></a>
                     </div>
                 </div>
                 <div class="col-md-6 text-center header_search">
                     <form class="search-form" name="search-form" method="get" action="timkiem.html" role="search">
-                        <input class="search-input" id="search" name="contents" type="search"  placeholder="Bạn cần tìm sản phẩm nào..." onkeypress="TKP(e)">
+                        <input class="search-input" id="search" name="contents" type="search"
+                            placeholder="Bạn cần tìm sản phẩm nào..." onkeypress="TKP(e)">
                         <!-- <a href=""><i class="search-icon fa-solid fa-magnifying-glass"></i></a> -->
-                        <button class="btn search-btn" onclick="Tim()"><i class="search-icon fa-solid fa-magnifying-glass"></i></button>
+                        <button class="btn search-btn" onclick="Tim()"><i
+                                class="search-icon fa-solid fa-magnifying-glass"></i></button>
                     </form>
                 </div>
                 <div class="col-md-4 header-inner-item">
@@ -63,7 +67,8 @@
         </div>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-sm header_nav">
-            <button class="navbar-toggler nav-btn-menu" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <button class="navbar-toggler nav-btn-menu" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse " id="collapsibleNavbar">
@@ -130,39 +135,47 @@
     </header>
     <!-- CONTAINER -->
 
-        <div id="wrapper">
-                <div class="container">
-                    <div class="row justify-content-center my-5">
-                        <form action="" class="col-md-4 bg-form p-3 my-3" id="form">
-                            <h1 class="text-center text-uppercase h3 py-3 fs-title">Đăng nhập</h1>
-                            <div class="form-group">
-                                <label for="email"></label>
-                                <input type="text" name="email" id="email" class="form-control fs-md"
-                                placeholder="Email" >
-                            </div>
-                            <p id="errorMessage" class="text-danger mt-3 fs-ms ms-2" hidden></p>
+    <div id="wrapper">
+        <div class="container">
+            <div class="row justify-content-center my-5 ">
 
-                            <div class="form-group">
-                                <label for="password"></label>
-                                <input type="password" name="password" id="password" class="form-control fs-md"
-                                placeholder="Mật khẩu" >
-                            </div>
-                            <p id="errorMessage1" class="text-danger mt-3 fs-ms ms-2" hidden></p>
+                <form class="col-md-4 bg-form p-3" onsubmit="return regvalidate(this);">
 
-                            <div class="row-sm-2 wraped_login">
-                                <div class="login-btn">
-                                    <input type="submit" value="Đăng nhập" class="login-btn_item btn-primary btn my-3 fs-md ">
-                                </div>
-                                <div class="fgpasswd-register">
-                                    <a href="quenmatkhau.html" class=" fgpw ms-1 "> Quên mật khẩu</a>
-                                    <a href="dangky.html" class=" fgpw">Chưa có tài khoản? Đăng ký ngay</a>
-                                </div>
-                            </div>
-                        </form>
+                    <h1 class="text-center text-uppercase h3 py-3 fs-title">ĐỔI MẬT KHẨU</h1>
+
+                    <div class="form-group">
+                        <h4>Tên đăng nhập</h4>
+                        <input type="text" name="fullname" id="fullname" class="form-control  fs-md" required>
                     </div>
-                </div>
+
+
+                    <div class="form-group">
+                        <h4>Mật khẩu cũ</h4>
+                        <input name="psw" type="password" name="password" id="password" class="form-control fs-md"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <h4>Mật khẩu mới</h4>
+                        <input name="psw" type="password" name="password" id="password" class="form-control fs-md"
+                            required>
+                    </div>
+
+
+                    <div class="form-group">
+                        <h4>Nhập lại mật khẩu mới</h4>
+                        <input name="psw2" type="password" name="password" id="password" class="form-control fs-md"
+                            required>
+                    </div>
+
+                    <button type="submit" class="form-group btn-primary btn my-3 fs-md">Cập nhật</button>
+
+                </form>
+            </div>
         </div>
-    
+    </div>
+
+
 
     <!-- FOOTER -->
     <footer>
@@ -191,7 +204,7 @@
                         </p>
                         <p>
                             <a href="gopy.html" class="hover-link">
-                            Bạn có điều gì không hài lòng? Hãy gửi góp ý cho chúng tôi.
+                                Bạn có điều gì không hài lòng? Hãy gửi góp ý cho chúng tôi.
                             </a>
                         </p>
                     </div>
@@ -237,40 +250,74 @@
             <div class="row text-center">
                 <p>Copyright &copy 2023 - Bản quyền thuộc về Tech Shop</p>
             </div>
-        </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <a href="trangchu.html"><img class="logo_footer mx-auto d-block" src="./images/Logo/logo_name.png"
+                            alt="Tech shop"></a>
+                </div>
+
+                <div class="col-sm-3">
+                    <h4>BẠN CẦN HỖ TRỢ</h4>
+                    <div class="list-group">
+                        <p>
+                            <i class="fa-solid fa-phone"></i>
+                            (00)00000000
+                        </p>
+
+                        <p>
+                            <i class="fa-solid fa-envelope"></i>
+                            student@student.ctu.edu.vn
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Địa chỉ: Số 134, Đường 3/2, Phường Xuân Khánh, Quận Ninh Kiều, Thành phố Cần Thơ
+                        </p>
+                        <p>
+                            <a href="gopy.html" class="hover-link">
+                                Bạn có điều gì không hài lòng? Hãy gửi góp ý cho chúng tôi.
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <h4>HÃY THEO DÕI CHÚNG TÔI TRÊN</h4>
+                    <div class="list-group">
+                        <a href="#" class="social-media-icon">
+                            <i class="fa-brands fa-facebook"></i>
+                            Facebook
+                        </a>
+                        <a href="#" class="social-media-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                            Instagram
+                        </a>
+                        <a href="#" class="social-media-icon">
+                            <i class="fa-brands fa-twitter"></i>
+                            Twitter
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-3 ">
+                    <h4>THANH TOÁN</h4>
+                    <div class="list-group">
+                        <span>
+                            <i class="fa-brands fa-cc-visa"></i>
+                            <i class="fa-brands fa-cc-paypal"></i>
+                        </span>
+
+                        <span>
+                            <i class="fa-brands fa-cc-mastercard"></i>
+                            <i class="fa-brands fa-dhl"></i>
+                        </span>
+
+                        <span>
+                            <i class="fa-brands fa-cc-jcb"></i>
+                            <i class="fa-brands fa-cc-amex"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <p>Copyright &copy 2023 - Bản quyền thuộc về Tech Shop</p>
+            </div>
     </footer>
-
-    <script src="js/validatorLogin.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
-
-    <script>
-
-        var usersDatabase = {
-            "user": {
-            "username": "student@gmail.com",
-            "password": "12345678"
-            }
-        };
-  
-        var sumbit = document.querySelector(".login-btn"); 
-        sumbit.addEventListener('click', function() {
-           
-             var username = document.getElementById("email").value;
-             var password = document.getElementById("password").value;
-             checkLogin(username, password);
-        
-         })
-
-         function checkLogin(username, password) {
-             for (var user in usersDatabase) {
-             if (username === usersDatabase[user].username && password === usersDatabase[user].password) {
-                 window.location.href = "thongtinuser.html"; // Chuyển hướng đến trang chủ khi đăng nhập thành công
-                 return;
-             }
-             }
-             alert("Thông tin đăng nhập không chính xác"); // Hiển thị thông báo lỗi nếu đăng nhập không thành công
-         }
-    </script>
-</body>
-</html>
