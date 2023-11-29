@@ -38,7 +38,7 @@ form{
 }
 
 .vertical-line {
-    height: 200px; /* Điều chỉnh chiều cao của đường kẻ đứng */
+    height: 220px; /* Điều chỉnh chiều cao của đường kẻ đứng */
     border-left: 1px solid lightgrey; /* Độ rộng và màu sắc của đường kẻ đứng */
 }
 
@@ -47,4 +47,9 @@ form{
     height: 120px; /* Chiều cao của hình */
     background-color: blue; /* Màu nền của hình */
     border-radius: 50%; /* Chuyển đổi thành hình tròn */
+}
+
+a{
+    font-size: 15px;
+    text-decoration: none;
 }
