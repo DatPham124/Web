@@ -1,22 +1,23 @@
-function regvalidate(frm){
+function regvalidate(frm) {
 
-    if (frm.psw.value.length<8){
-        alert("Mật khẩu tối thiểu có 8 kí tự");
-        frm.psw.focus();
+    if (frm.oldPsw.value.length < 8) {
+        alert("Mật khẩu cũ không đúng");
+        frm.oldPsw.focus();
         return false;
     }
 
-    if(frm.psw2.value.length<8){
-        alert("Mật khẩu tối thiểu có 8 kí tự");
-        frm.psw2.focus();
+    if (frm.newPsw.value.length < 8) {
+        alert("Mật khẩu mới tối thiểu cần có 8 ký tự");
+        frm.newPsw.focus();
         return false;
     }
 
-    if(frm.psw.value.length != frm.psw2.value.length){
-        alert("MK không hợp lệ");
-        frm.psw2.focus();
+    if (frm.confirmPsw.value !== frm.newPsw.value) {
+        alert("Mật khẩu nhập lại không khớp");
+        frm.confirmPsw.focus();
         return false;
     }
+
     alert("Đã gửi dữ liệu đăng ký");
     return true;
 }

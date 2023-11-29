@@ -80,7 +80,7 @@
                         <a class="nav-item-a" href="gioithieu.html">Giới thiệu</a>
                     </li>
                     <li class="nav-item nav_more">
-                        <a class="nav-item-a no-pointer" href="#">
+                        <a class="nav-item-a " href="sanpham.html">
                             Sản phẩm
                             <i class="fa-solid fa-chevron-down"></i>
                             <div>
@@ -139,38 +139,37 @@
         <div class="container">
             <div class="row justify-content-center my-5 ">
 
-                <form class="col-md-4 bg-form p-3" onsubmit="return regvalidate(this);">
+                <div class="col-md-4 bg-form p-3">
 
-                    <h1 class="text-center text-uppercase h3 py-3 fs-title">ĐỔI MẬT KHẨU</h1>
+                    <form onsubmit="return regvalidate(this);">
 
-                    <div class="form-group">
-                        <h4>Tên đăng nhập</h4>
-                        <input type="text" name="fullname" id="fullname" class="form-control  fs-md" required>
-                    </div>
+                        <h1 class="text-center text-uppercase h3 py-3 fs-title">ĐỔI MẬT KHẨU</h1>
 
-
-                    <div class="form-group">
-                        <h4>Mật khẩu cũ</h4>
-                        <input name="psw" type="password" name="password" id="password" class="form-control fs-md"
-                            required>
-                    </div>
-
-                    <div class="form-group">
-                        <h4>Mật khẩu mới</h4>
-                        <input name="psw" type="password" name="password" id="password" class="form-control fs-md"
-                            required>
-                    </div>
+                        <div class="form-group">
+                            <h4>Tên đăng nhập</h4>
+                            <input type="text" name="fullname" id="fullname" class="form-control  fs-md" required>
+                        </div>
 
 
-                    <div class="form-group">
-                        <h4>Nhập lại mật khẩu mới</h4>
-                        <input name="psw2" type="password" name="password" id="password" class="form-control fs-md"
-                            required>
-                    </div>
+                        <div class="form-group">
+                            <h4>Mật khẩu cũ</h4>
+                            <input name="oldPsw" type="password" class="form-control fs-md" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <h4>Mật khẩu mới</h4>
+                            <input name="newPsw" type="password" class="form-control fs-md" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <h4>Nhập lại mật khẩu mới</h4>
+                            <input name="confirmPsw" type="password" class="form-control fs-md" required>
+                        </div>
+                        
+                        <button type="submit" class="form-group btn-primary btn my-3 fs-md">Cập nhật</button>
 
-                    <button type="submit" class="form-group btn-primary btn my-3 fs-md">Cập nhật</button>
-
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
@@ -248,8 +247,7 @@
                 </div>
             </div>
             <div class="row text-center">
-                <p>Copyright &copy 2023 - Bản quyền thuộc về Tech Shop</p>
-            </div>
+                <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-3">
                     <a href="trangchu.html"><img class="logo_footer mx-auto d-block" src="./images/Logo/logo_name.png"
@@ -320,4 +318,13 @@
             <div class="row text-center">
                 <p>Copyright &copy 2023 - Bản quyền thuộc về Tech Shop</p>
             </div>
+        </div>
     </footer>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
+</html>
