@@ -1,3 +1,15 @@
+
+function myFunction() {
+    myVar = setTimeout(showPage, 2000);
+}
+
+function showPage() {
+    document.getElementById("preloader").style.display = "none";
+    document.getElementById("preloader-wrapper").style.display = "none";
+    document.getElementById("preloader-inner").style.display = "none";
+}
+  
+
 // Backtop
 $(document).ready(function() {
     $(window).scroll(function() {
