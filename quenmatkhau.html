@@ -132,13 +132,14 @@
         <div id="wrapper">
                 <div class="container">
                     <div class="row justify-content-center my-5">
-                         <form action="" class="col-md-4 bg-form p-3 my-3" >
+                         <form action="" class="col-md-4 bg-form p-3 my-3" id="form-3" >
                             <h1 class="text-center text-uppercase h3 py-3 fs-title">QUÊN MẬT KHẨU</h1>
                             <div class="form-group">
                                 <label for="email"></label>
                                 <input type="text" name="email" id="email" class="form-control fs-md"
                                 placeholder="Vui lòng nhập Email để lấy lại mật khẩu" >
                             </div>
+                            <p id="errorMessage" class="text-danger fs-ms ms-2" hidden></p>
                             <div class="row-sm-2 wraped_login">
                                 <div class="login-btn">
                                     <input type="submit" value="Gửi mã xác nhận" class="login-btn_item btn-primary btn my-3 fs-md ">
@@ -232,6 +233,31 @@
 
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
+<script>
+document.getElementById('form-3').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    validateFormQmk();
+  });
 
+  function validateFormQmk() {
+      
+      var email = document.getElementById('email').value;
+     
+      var emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; 
+      var errorMessage = '';
+
+      if (!email.match(emailRegex)) {
+        errorMessage = 'Email không hợp lệ.';
+      }
+    
+      document.getElementById('errorMessage').textContent = errorMessage;
+      document.getElementById('errorMessage').hidden = (errorMessage === '');
+      if (errorMessage !== '') {
+        return false;
+      }
+      alert('Đã gửi mã xác nhận');
+    
+    }
+</script>
 
 </html>

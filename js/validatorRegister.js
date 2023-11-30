@@ -14,7 +14,7 @@ document.getElementById('form-1').addEventListener('submit', function(event) {
       
      
       var emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; 
-      var passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}$/; 
+      var passwordRegex = /^.{1,8}$/; 
      
       var errorMessage1 = '';
       var errorMessage2 = '';
@@ -30,9 +30,12 @@ document.getElementById('form-1').addEventListener('submit', function(event) {
       }
     
       if (!password.match(passwordRegex)) {
-        errorMessage3 = 'Mật khẩu không hợp lệ. Mật khẩu phải có ít nhất 6 ký tự, bao gồm ít nhất một chữ thường, một chữ hoa và một chữ số.';
+        errorMessage3 = 'Mật khẩu không hợp lệ. Mật khẩu tối đa 8 ký tự.';
       }
     
+      if (fullname.trim() === '') {
+        errorMessage4 = 'Mật khẩu không được để trống.';
+      }
       if (password !== repassword) {
         errorMessage4 = 'Mật khẩu không trùng khớp.';
       }

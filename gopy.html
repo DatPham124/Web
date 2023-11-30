@@ -132,13 +132,14 @@
         <div id="wrapper">
                 <div class="container">
                     <div class="row justify-content-center my-5">
-                         <form action="" class="col-md-4 bg-form p-3 " >
+                         <form action="" class="col-md-4 bg-form p-3" id="form-2">
                             <h1 class="text-center text-uppercase h3 py-3 fs-title">GÓP Ý</h1>
                             <div class="form-group">
                                 <label for="fullname"></label>
                                 <input type="text" name="fullname" id="fullname" class="form-control  fs-md"
-                                placeholder="Họ và tên" required>
+                                placeholder="Họ và tên">
                             </div>
+                            <p id="errorMessage1" class="text-danger fs-ms ms-2" hidden></p>
                             <div class="form-group">
                                 <label for="gender"></label>
                                 <div>
@@ -155,17 +156,20 @@
                             <div class="form-group">
                                 <label for="email"></label>
                                 <input type="text" name="email" id="email" class="form-control fs-md"
-                                placeholder="Email" required>
+                                placeholder="Email">
                             </div>
+                            <p id="errorMessage2" class="text-danger fs-ms ms-2" hidden></p>
                             <div class="form-group">
                                 <label for="sdt"></label>
                                 <input type="text" name="sdt" id="sdt" class="form-control fs-md"
                                 placeholder="Số điện thoại liên lạc">
-                            </div>                        
+                            </div>                 
+                            <p id="errorMessage3" class="text-danger fs-ms ms-2" hidden></p>       
                             <div class="form-group py-3">
-                                <textarea name="gopy" id="" class="form-control fs-md my-2" rows="4"
+                                <textarea name="gopy" id="gopy" class="form-control fs-md " rows="4"
                                  placeholder="Nhập nội dung cần góp ý..."></textarea>
                             </div>
+                            <p id="errorMessage4" class="text-danger fs-ms ms-2" hidden></p>
                             <div class="col flex-container">
                                 <input type="submit" value="Gửi" class="btn-primary btn fs-md px-5">  
                              </div>
@@ -256,5 +260,126 @@
 
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
+<script>
+document.getElementById('form-2').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    validateFormGopY();
+  });
+
+  function validateFormGopY() {
+      
+      var fullname = document.getElementById('fullname').value;
+      var email = document.getElementById('email').value;
+      var sdt = document.getElementById('sdt').value;
+      var gopy = document.getElementById('gopy').value;
+      
+     
+      var emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; 
+      var phoneRegex = /^\d{10}$/;
+     
+      var errorMessage1 = '';
+      var errorMessage2 = '';
+      var errorMessage3 = '';
+      var errorMessage4 = '';
+    
+      if (fullname.trim() === '') {
+        errorMessage1 = 'Họ và tên không được để trống.';
+      }
+    
+      if (!email.match(emailRegex)) {
+        errorMessage2 = 'Email không hợp lệ.';
+      }
+    
+      if (sdt.trim() === '') {
+        errorMessage3 = 'Số điện thoại không được để trống.';
+      }
+
+      if (sdt.trim() !== '' && !sdt.match(phoneRegex)) {
+        errorMessage3 = 'Số điện thoại không hợp lệ. Vui lòng nhập 10 chữ số.';
+      }
+    
+      if (gopy.trim() === '') {
+        errorMessage4 = 'Vui lòng nhập nội dung cần góp ý.';
+      }
+    
+     
+      document.getElementById('errorMessage1').textContent = errorMessage1;
+      document.getElementById('errorMessage2').textContent = errorMessage2;
+      document.getElementById('errorMessage3').textContent = errorMessage3;
+      document.getElementById('errorMessage4').textContent = errorMessage4;
+    
+      document.getElementById('errorMessage1').hidden = (errorMessage1 === '');
+      document.getElementById('errorMessage2').hidden = (errorMessage2 === '');
+      document.getElementById('errorMessage3').hidden = (errorMessage3 === '');
+      document.getElementById('errorMessage4').hidden = (errorMessage4 === '');
+    
+      
+      if (errorMessage1 !== '' || errorMessage2 !== '' || errorMessage3 !== '' || errorMessage4 !== '') {
+        return false;
+      }
+    
+     
+      alert('Góp ý thành công!');
+    
+    }
+
+
+
+/* document.getElementById('form-2').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  validateFormGopY();
+});
+
+function validateFormGopY() {
+  var fullname = document.getElementById('fullname').value;
+  var email = document.getElementById('email').value;
+  var sdt = document.getElementById('sdt').value;
+  var gopy = document.getElementById('gopy').value;
+
+  var emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  var phoneRegex = /^\d{10}$/;
+
+
+  var errorMessage = '';
+  var errorMessage1 = '';
+  var errorMessage2 = '';
+  var errorMessage3 = '';
+
+  if (fullname.trim() === '') {
+    errorMessage = 'Vui lòng nhập họ và tên.';
+  }
+
+  if (!email.match(emailRegex)) {
+    errorMessage1 = 'Email không hợp lệ.';
+  }
+
+  if (sdt.trim() !== '' && !sdt.match(phoneRegex)) {
+    errorMessage2 = 'Số điện thoại không hợp lệ. Vui lòng nhập 10 chữ số.';
+  }
+
+  if (gopy.trim() === '') {
+    errorMessage3 = 'Vui lòng nhập nội dung cần góp ý.';
+  }
+
+      document.getElementById('errorMessage').textContent = errorMessage;
+      document.getElementById('errorMessage1').textContent = errorMessage1;
+      document.getElementById('errorMessage2').textContent = errorMessage2;
+      document.getElementById('errorMessage3').textContent = errorMessage3;
+    
+      document.getElementById('errorMessage').hidden = (errorMessage === '');
+      document.getElementById('errorMessage1').hidden = (errorMessage1 === '');
+      document.getElementById('errorMessage2').hidden = (errorMessage2 === '');
+      document.getElementById('errorMessage3').hidden = (errorMessage3 === '');
+    
+      
+      if (errorMessage !== '' || errorMessage1 !== '' || errorMessage2 !== '' || errorMessage3 !== '') {
+        return false;
+      }
+
+  alert('Form submitted successfully!');
+}
+*/
+</script>
 
 </html>
