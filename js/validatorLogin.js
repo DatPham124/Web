@@ -11,7 +11,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
       var password = document.getElementById('password').value;
       
       var emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; 
-      var passwordRegex = /^.{1,8}$/; 
+      var passwordRegex = /^.{8,}$/; 
       
       var errorMessage = '';
       var errorMessage1 = '';
@@ -20,7 +20,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
         errorMessage = 'Email không hợp lệ.';
       }
       if (!password.match(passwordRegex)) {
-        errorMessage1 = 'Mật khẩu không hợp lệ. Mật khẩu tối đa 8 ký tự.';
+        errorMessage1 = 'Mật khẩu không hợp lệ. Mật khẩu tối thiểu 8 ký tự.';
       }
     
       document.getElementById('errorMessage').textContent = errorMessage;
