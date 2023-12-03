@@ -60,3 +60,5 @@ document.getElementById('form-1').addEventListener('submit', function(event) {
       alert('Đăng ký thành công!');
     
     }
+
+   

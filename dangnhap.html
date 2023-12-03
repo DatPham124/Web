@@ -244,33 +244,6 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 
-    <script>
-
-        var usersDatabase = {
-            "user": {
-            "username": "student@gmail.com",
-            "password": "12345678"
-            }
-        };
-  
-        var sumbit = document.querySelector(".login-btn"); 
-        sumbit.addEventListener('click', function() {
-           
-             var username = document.getElementById("email").value;
-             var password = document.getElementById("password").value;
-             checkLogin(username, password);
-        
-         })
-
-         function checkLogin(username, password) {
-             for (var user in usersDatabase) {
-             if (username === usersDatabase[user].username && password === usersDatabase[user].password) {
-                 window.location.href = "thongtinuser.html"; // Chuyển hướng đến trang chủ khi đăng nhập thành công
-                 return;
-             }
-             }
-             alert("Thông tin đăng nhập không chính xác"); // Hiển thị thông báo lỗi nếu đăng nhập không thành công
-         }
-    </script>
+    
 </body>
 </html>
